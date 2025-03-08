@@ -1,0 +1,13 @@
+node_modules
+dist
+build
+.next
+.cache
+.env
+.env.local
+*.md
+*.json
+*.log
+*.yaml
+.vscode
+
