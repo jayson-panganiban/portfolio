@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
       <div className='container px-4 mx-auto z-10'>
         <div className='max-w-4xl mx-auto'>
           {/* Main Hero Card */}
-          <div className='p-6 md:p-8 lg:p-10 rounded-lg backdrop-blur-sm shadow-[0_0_15px_rgba(16,185,129,0.1),_0_0_30px_rgba(0,0,0,0.3)] backdrop-filter border border-emerald-500/10 bg-black/60 transition-all duration-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.15),_0_0_40px_rgba(0,0,0,0.3)] mb-8'>
+          <div className='rounded-lg backdrop-blur-sm shadow-[0_0_15px_rgba(16,185,129,0.1),_0_0_30px_rgba(0,0,0,0.3)] backdrop-filter border border-emerald-500/10 bg-black/60 transition-all duration-500 hover:shadow-[0_0_20px_rgba(16,185,129,0.15),_0_0_40px_rgba(0,0,0,0.3)] mb-8'>
             <TerminalWindow className='border border-emerald-500/20 mb-6'>
               <TerminalCommand command='whoami' className='mb-6 md:mb-8' />
 
@@ -89,7 +89,7 @@ export const HeroSection: React.FC = () => {
                     rel='noopener noreferrer'
                     className='border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 font-mono rounded-sm text-sm'
                   >
-                    <FaDownload size={14} />
+                    <FaDownload size={12} />
                     <span className='ml-2'>download resume.pdf</span>
                   </Button>
                 </div>
