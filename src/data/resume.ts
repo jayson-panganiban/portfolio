@@ -36,7 +36,7 @@ export const resume: ResumeData = {
 
   workHistory: [
     {
-      title: 'Senior QA Engineer',
+      title: 'Senior Consultant - Test Analyst',
       company: 'Datacom',
       period: '2022 - Present',
       description:
@@ -77,12 +77,13 @@ export const resume: ResumeData = {
     'Performance Engineering',
     'Devops Practice',
     'Framework Development',
+    'LLM Integration',
   ],
 
   technicalSkills: [
     {
       name: 'Programming Languages',
-      skills: ['Python', 'JavaScript/TypeScript'],
+      skills: ['Python', 'JavaScript/TypeScript', 'Java'],
     },
     {
       name: 'Automation Testing',
@@ -132,5 +133,5 @@ export const resume: ResumeData = {
     },
   ],
 
-  resumeLink: '/resume.pdf',
+  resumeLink: '/ResumeJaysonPanganiban.pdf',
 }

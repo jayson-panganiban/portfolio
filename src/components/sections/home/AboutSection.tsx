@@ -3,9 +3,12 @@ import React from 'react'
 
 const coreSkills = [
   'Automation Testing',
-  'Performance Engineering',
-  'Devops Practice',
   'Framework Development',
+  'API Testing',
+  'Performance Engineering',
+  'Chaos Engineering',
+  'Devops Practice',
+  'LLM Integration',
 ]
 
 const skills = [
@@ -20,8 +23,9 @@ const skills = [
   'Devops',
   'LocustIO',
   'K6',
-  'LLM',
-  'NLP',
+  'JMeter',
+  'FastAPI',
+  'ReactJS',
 ]
 
 export const AboutSection: React.FC = () => {
@@ -35,9 +39,6 @@ export const AboutSection: React.FC = () => {
             <article className='w-full md:w-1/2'>
               <TerminalWindow>
                 <div className='flex flex-col space-y-2 md:space-y-3 w-full text-sm md:text-base'>
-                  <h3 className='text-emerald-300 font-normal'>
-                    # Jayson Panganiban - QA Engineer
-                  </h3>
                   <h4 className='text-gray-300  font-normal'>## Skills</h4>
                   <ul className='list-none' aria-label='Core skills'>
                     {coreSkills.map((skill, index) => (
@@ -47,19 +48,8 @@ export const AboutSection: React.FC = () => {
                     ))}
                   </ul>
                   <div className='text-blue-300'>
-                    &gt; With a passion for improving development workflows and ensuring excellence
-                    in software delivery.
-                  </div>
-                  <div className='text-gray-300' aria-hidden='true'>
-                    ```python
-                  </div>
-                  <div className='text-pink-400'>def skills_summary():</div>
-                  <div className='text-emerald-300 pl-4'>
-                    <span>return</span>{' '}
-                    <span className='text-yellow-400'>&quot;Automation + Performance&quot;</span>
-                  </div>
-                  <div className='text-gray-300' aria-hidden='true'>
-                    ```
+                    Passionate about innovation, AI-driven solutions, and driving quality outcomes
+                    through collaborative client partnerships.
                   </div>
                 </div>
               </TerminalWindow>

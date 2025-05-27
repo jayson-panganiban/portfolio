@@ -3,7 +3,7 @@ import { AboutSection, HeroSection, RecentProjectsSection } from '@/components/s
 
 export default function Home() {
   return (
-    <Layout title='Home' description='Welcome to my portfolio website!'>
+    <Layout title='Jayson Panganiban' description='Welcome to my portfolio website!'>
       <HeroSection />
       <AboutSection />
       <RecentProjectsSection />
