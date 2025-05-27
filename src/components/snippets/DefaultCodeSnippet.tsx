@@ -18,7 +18,7 @@ export const DefaultCodeSnippet: React.FC = () => {
       </div>
       <div className='text-blue-400'>{'}'}</div>
       <div className='mt-2'></div>
-      <div className='text-gray-500'>{/* Run the function to see the result */}</div>
+      <div className='text-gray-300'>{/* Run the function to see the result */}</div>
       <div className='text-blue-400'>projectSample();</div>
     </div>
   )

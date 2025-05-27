@@ -7,9 +7,9 @@ export const RephraseSnippet = () => (
     </span>
     <div className='mt-3 text-gray-300'>
       <TerminalCommand command='pip' args='install rephrase' className='mb-2 md:mb-3' />
-      <span className='text-gray-500'>Installed 1 package in 2ms</span>
+      <span className='text-gray-300'>Installed 1 package in 2ms</span>
       <br /> <span className='text-emerald-400'>+</span>{' '}
-      <span className='text-gray-500'>Rephrase==0.1.1</span>
+      <span className='text-gray-300'>Rephrase==0.1.1</span>
     </div>
     <span className='text-pink-400' aria-hidden='true'>
       # Rephrase text

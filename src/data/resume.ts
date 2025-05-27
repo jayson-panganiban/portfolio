@@ -40,7 +40,7 @@ export const resume: ResumeData = {
       company: 'Datacom',
       period: '2022 - Present',
       description:
-        'Currently deployed at ING working on outbound customer communications systems. Responsible for testing claims, policies, schedules and multi-channel delivery methods including email, fax, print and SMS. Ensuring seamless and accurate customer-facing communications across diverse platforms.',
+        'Currently deployed at IAG working on outbound customer communications systems. Responsible for testing claims, policies, schedules and multi-channel delivery methods including email, fax, print and SMS. Ensuring seamless and accurate customer-facing communications across diverse platforms.',
     },
     {
       title: 'Software Engineer in Automation',
@@ -52,7 +52,7 @@ export const resume: ResumeData = {
     {
       title: 'Test Engineer',
       company: 'PDAX',
-      period: '2020',
+      period: '2020 - 2021',
       description:
         'Worked as a consultant specialized in test automation and performance testing on several crypto projects. Designed and implemented testing strategies for cryptocurrency trading platforms and services within the emerging blockchain technology space.',
     },

@@ -14,7 +14,7 @@ const TerminalCommand: React.FC<TerminalCommandProps> = ({
   children,
 }) => {
   return (
-    <div className={`text-gray-400 font-mono ${className}`} aria-hidden='true'>
+    <div className={`text-gray-200 font-mono ${className}`} aria-hidden='true'>
       <p className=' flex flex-wrap items-baseline break-words'>
         <span className='text-emerald-500 mr-2'>$</span>
         <span className='text-emerald-300'>{command}</span>

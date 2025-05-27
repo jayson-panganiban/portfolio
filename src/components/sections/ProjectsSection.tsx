@@ -9,7 +9,7 @@ export const ProjectsSection: React.FC = () => {
     .filter(project => project.featured)
     .sort((a, b) => featuredOrder.indexOf(a.title) - featuredOrder.indexOf(b.title))
 
-  const bgColors = ['bg-gray-900', 'bg-slate-800', 'bg-gray-900']
+  const bgColors = ['bg-black', 'bg-gray-900', 'bg-black']
 
   return (
     <>
@@ -23,7 +23,7 @@ export const ProjectsSection: React.FC = () => {
             <div className='max-w-5xl mx-auto'>
               {index === 0 && (
                 <SectionHeader
-                  title='Side Quests'
+                  title='Projects'
                   description="A mix of weekend projects that scratched my own itch and fun ideas I couldn't resist building in my spare time."
                 />
               )}

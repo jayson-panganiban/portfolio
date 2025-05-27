@@ -4,12 +4,12 @@ import { FaDownload } from 'react-icons/fa'
 
 export const WorkSection: React.FC = () => {
   return (
-    <section className='section-container bg-slate-800' aria-label='Professional Background'>
+    <section className='section-container bg-gray-900' aria-label='Professional Background'>
       <div className='container px-4 mx-auto'>
-        <div className='max-w-5xl mx-auto'>
+        <div className='max-w-7xl mx-auto'>
           <SectionHeader title='Professional Background' />
           {/* Work History Timeline */}
-          <div className='space-y-6 sm:space-y-8 md:space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-emerald-400/30 ml-6 md:ml-8'>
+          <div className='space-y-4 sm:space-y-6 md:space-y-10 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-emerald-400/30 '>
             {resume.workHistory.map((job, index) => (
               <div key={index} className='relative pl-6 md:pl-8'>
                 <div className='absolute left-0 top-0 -translate-x-1/2 w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 rounded-full bg-emerald-400 border-4 border-gray-900'></div>

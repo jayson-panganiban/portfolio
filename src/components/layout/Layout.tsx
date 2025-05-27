@@ -19,7 +19,7 @@ export const Layout = ({
 
       <a
         href='#main-content'
-        className='sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-emerald-500 focus:text-black'
+        className='sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-emerald-500 focus:text-gray-900'
       >
         Skip to main content
       </a>

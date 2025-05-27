@@ -5,6 +5,7 @@ interface ButtonProps {
   children: ReactNode
   href?: string
   variant?: 'primary' | 'outline' | 'ghost'
+  size?: 'sm' | 'md' | 'lg'
   className?: string
   onClick?: () => void
   type?: 'button' | 'submit' | 'reset'
@@ -17,6 +18,7 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   href,
   variant = 'primary',
+  size = 'md',
   className = '',
   onClick,
   type = 'button',
@@ -24,17 +26,25 @@ export const Button: React.FC<ButtonProps> = ({
   rel,
   scroll = true,
 }) => {
-  const baseClass = 'btn font-mono rounded-sm text-xs sm:text-sm'
-  const variantClasses = {
-    primary: 'btn-primary',
-    outline: 'btn-outline border-emerald-500 text-emerald-400',
-    ghost: 'text-text hover:text-primary hover:bg-primary/5',
+  const baseClass =
+    'btn font-mono rounded-sm transition-all duration-300 inline-flex items-center justify-center gap-2'
+
+  const sizeClasses = {
+    sm: 'px-2.5 py-1.5 text-xs min-h-[32px]',
+    md: 'px-3 py-2 text-sm min-h-[36px]',
+    lg: 'px-4 py-2.5 text-base min-h-[40px]',
   }
 
-  const buttonStyles = `${baseClass} ${variant === 'ghost' ? variantClasses.ghost : variantClasses[variant]} ${className}`
+  const variantClasses = {
+    primary: 'btn-primary',
+    outline: 'btn-outline',
+    ghost: 'btn-ghost',
+  }
+
+  const buttonStyles = `${baseClass} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`
 
   const focusStyles =
-    'focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background'
+    'focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:ring-offset-2 focus:ring-offset-background'
   const finalStyles = `${buttonStyles} ${focusStyles}`
 
   if (href) {

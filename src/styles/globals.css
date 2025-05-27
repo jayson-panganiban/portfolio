@@ -6,31 +6,43 @@
   body {
     @apply bg-background text-text font-sans;
   }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-md font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background;
+    @apply font-medium transition-all duration-300 focus:outline-none border border-transparent;
   }
 
   .btn-primary {
-    @apply bg-primary text-white hover:bg-primary/80 active:bg-primary/90;
+    @apply bg-emerald-500 text-gray-900 border-emerald-500 hover:bg-emerald-600 hover:border-emerald-600 active:bg-emerald-700 shadow-sm hover:shadow-md;
   }
 
   .btn-outline {
-    @apply border border-primary text-primary hover:bg-primary/10 active:bg-primary/20;
+    @apply border-emerald-400 text-emerald-300 bg-transparent hover:bg-emerald-500/10 hover:text-emerald-200 hover:border-emerald-300 active:bg-emerald-500/20;
   }
 
   .btn-ghost {
-    @apply text-text hover:text-primary hover:bg-primary/5 active:bg-primary/10;
+    @apply text-gray-200 bg-transparent border-transparent hover:text-white hover:bg-gray-700/50 active:bg-gray-700/70;
   }
 
-  .btn-hover {
-    @apply hover:shadow-lg hover:shadow-primary/50 active:shadow-primary/70;
+  .btn:focus-visible {
+    @apply ring-2 ring-emerald-400/60 ring-offset-2 ring-offset-gray-900;
   }
 
-  .btn-full {
-    @apply w-full;
+  /* Loading state */
+  .btn:disabled {
+    @apply opacity-50 cursor-not-allowed hover:bg-current hover:border-current;
+  }
+
+  @media (max-width: 640px) {
+    .btn {
+      @apply min-h-[36px];
+    }
   }
 
   .card {
@@ -95,7 +107,6 @@
 }
 
 @media (max-width: 640px) {
-  /* Ensure buttons have enough tap target size on mobile */
   .btn {
     @apply min-h-[40px];
   }

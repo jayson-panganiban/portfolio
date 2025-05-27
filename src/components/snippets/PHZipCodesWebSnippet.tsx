@@ -32,7 +32,7 @@ export const PHZipCodesWebSnippet = () => (
       <span className='text-blue-300'>Dict</span>:
     </div>
     <div className='pl-4 mb-2'>
-      <span className='text-gray-400'>
+      <span className='text-gray-200'>
         &quot;&quot;&quot;Search zipcodes in the Philippines.&quot;&quot;&quot;
       </span>
     </div>

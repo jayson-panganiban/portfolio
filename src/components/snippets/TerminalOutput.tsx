@@ -63,9 +63,9 @@ export const TerminalOutput = () => (
     {files.map((file, index) => (
       <div key={index}>
         <span className='text-emerald-400'>{file.permissions}</span>{' '}
-        <span className='text-gray-400'>{file.owner}</span>{' '}
+        <span className='text-gray-200'>{file.owner}</span>{' '}
         <span className='text-yellow-300'>{file.size}</span>{' '}
-        <span className='text-gray-400'>{file.date}</span>{' '}
+        <span className='text-gray-200'>{file.date}</span>{' '}
         <span
           className={
             file.isDirectory ? 'text-blue-400' : file.isRoot ? 'text-emerald-300' : 'text-white'

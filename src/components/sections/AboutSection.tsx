@@ -32,7 +32,7 @@ const skills = [
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id='about' className='py-16 md:py-20 bg-gray-800' aria-labelledby='about-heading'>
+    <section id='about' className='py-16 md:py-20 bg-gray-900' aria-labelledby='about-heading'>
       <div className='container px-4 mx-auto'>
         <div className='max-w-5xl mx-auto'>
           <SectionHeader title='About Me' />
@@ -40,7 +40,7 @@ export const AboutSection: React.FC = () => {
             <article className='w-full md:w-1/2'>
               <TerminalWindow>
                 <div className='flex flex-col space-y-2 md:space-y-3 w-full text-sm md:text-base'>
-                  <h4 className='text-gray-300  font-normal'>## Skills</h4>
+                  <h4 className='text-gray-300 font-normal'>## Skills</h4>
                   <ul className='list-none' aria-label='Core skills'>
                     {coreSkills.map((skill, index) => (
                       <li key={index} className='text-yellow-300'>
@@ -48,7 +48,7 @@ export const AboutSection: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-                  <div className='text-blue-300'>
+                  <div className='text-gray-300'>
                     Passionate about innovation, AI-driven solutions, and driving quality outcomes
                     through collaborative client partnerships.
                   </div>
@@ -57,9 +57,9 @@ export const AboutSection: React.FC = () => {
             </article>
             {/* Professional Profile */}
             <article className='w-full md:w-1/2'>
-              <div className='bg-gray-800 rounded-xl p-6 shadow-[8px_8px_16px_rgba(0,0,0,0.3),_-8px_-8px_16px_rgba(75,85,99,0.1)] border border-gray-700/50 transition-all duration-300 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.4),_-10px_-10px_20px_rgba(75,85,99,0.15)]'>
+              <div className='bg-slate-900 rounded-xl p-6 shadow-[8px_8px_16px_rgba(0,0,0,0.3),_-8px_-8px_16px_rgba(75,85,99,0.1)] border border-gray-700/50 transition-all duration-300 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.4),_-10px_-10px_20px_rgba(75,85,99,0.15)]'>
                 <h3 className='text-xl md:text-2xl font-semibold mb-2 md:mb-3 text-white'>
-                  <span className='text-emerald-400'>&gt;</span> Professional Profile
+                  <span className='text-emerald-400'>{'>'}</span> Professional Profile
                 </h3>
                 <div className='prose prose-sm md:prose-base prose-invert max-w-none text-gray-300 text-sm md:text-base'>
                   <p className='mb-3 md:mb-4 leading-relaxed'>

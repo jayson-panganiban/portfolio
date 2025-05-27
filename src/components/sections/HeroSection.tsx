@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
                 </p>
 
                 {/* Location */}
-                <div className='flex items-center text-gray-400 text-sm md:text-base'>
+                <div className='flex items-center text-gray-200 text-sm md:text-base'>
                   <FaMapMarkerAlt className='mr-2' />
                   <span>Melbourne, Australia</span>
                 </div>
@@ -43,7 +43,7 @@ export const HeroSection: React.FC = () => {
 
               {/* Skills/Specializations */}
               <div className='mb-8 md:mb-10'>
-                <p className='text-gray-400 text-sm md:text-base mb-3'>
+                <p className='text-gray-200 text-sm md:text-base mb-3'>
                   <span className='text-emerald-400'>$</span> echo $SPECIALIZATIONS
                 </p>
                 <p
@@ -64,7 +64,7 @@ export const HeroSection: React.FC = () => {
 
               {/* Brief intro */}
               <div className='mb-8 md:mb-10'>
-                <p className='text-gray-400 text-sm md:text-base mb-3'>
+                <p className='text-gray-200 text-sm md:text-base mb-3'>
                   <span className='text-emerald-400'>$</span> cat about.txt
                 </p>
                 <p className='text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed'>

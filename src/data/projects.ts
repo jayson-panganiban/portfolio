@@ -12,10 +12,10 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'PHZipCodesWeb',
+    title: 'Philippine ZIP Codes Search',
     description: 'Find postal codes across the Philippines with ease',
     longDescription:
-      'PHZipCodes helps you find zip codes across the Philippines with a clean, fast, and reliable search experience. From cities to municipalities, provinces, and regions, you can easily find the postal code you need.',
+      'A web application that allows user to find postal codes across the Philippines with ease. From cities to municipalities, provinces, and regions, you can easily find the postal code you need.',
     tags: ['FastAPI', 'HTMX', 'TailwindCSS', 'Web Static', 'phzipcodes'],
     github: 'https://github.com/jayson-panganiban/phzipcodes-web',
     website: 'https://www.phzipcodes.com',

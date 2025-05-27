@@ -17,7 +17,7 @@ export const PHZipCodesSnippet = () => (
       <span className='text-emerald-400'>zipcode</span>)
     </div>
     <div className='mb-2'>
-      <span className='text-gray-400'># Output:</span>
+      <span className='text-gray-200'># Output:</span>
     </div>
     <div>
       {'{'}

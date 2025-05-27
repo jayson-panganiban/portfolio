@@ -54,7 +54,7 @@ export const ProjectWindow: React.FC<ProjectWindowProps> = ({
               variant='ghost'
               target='_blank'
               rel='noopener noreferrer'
-              className='flex items-center gap-1.5 rounded-sm bg-emerald-500 font-mono text-black transition-all duration-300 hover:bg-emerald-600 md:gap-2 md:text-sm'
+              className='flex items-center gap-1.5 rounded-sm bg-emerald-500 font-mono text-gray-900 transition-all duration-300 hover:bg-emerald-600 md:gap-2 md:text-sm'
               aria-label={`Open ${title} website`}
             >
               <FaExternalLinkAlt size={12} />

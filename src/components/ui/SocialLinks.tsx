@@ -15,7 +15,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ className = '', linkCl
             href='https://github.com/jayson-panganiban'
             target='_blank'
             rel='noopener noreferrer'
-            className={`text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110 ${linkClassName}`}
+            className={`text-gray-200 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110 ${linkClassName}`}
             aria-label='Visit my GitHub profile'
           >
             <FaGithub
@@ -30,7 +30,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ className = '', linkCl
             href='https://www.linkedin.com/in/jayson-panganiban/'
             target='_blank'
             rel='noopener noreferrer'
-            className={`text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110 ${linkClassName}`}
+            className={`text-gray-200 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110 ${linkClassName}`}
             aria-label='Visit my LinkedIn profile'
           >
             <FaLinkedin
@@ -43,7 +43,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ className = '', linkCl
         <li>
           <a
             href='mailto:jsoncp@proton.me'
-            className={`text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110 ${linkClassName}`}
+            className={`text-gray-200 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110 ${linkClassName}`}
             aria-label='Send me an email'
           >
             <FaEnvelope

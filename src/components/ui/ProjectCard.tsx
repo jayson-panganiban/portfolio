@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '
         <h3 className='text-xl font-semibold mb-2 text-white group-hover:text-emerald-400'>
           <span className='text-emerald-400'>&gt;</span> {project.title}
         </h3>
-        <p className='text-gray-400 mb-4'>{project.description}</p>
+        <p className='text-gray-200 mb-4'>{project.description}</p>
         <div className='flex flex-wrap gap-2 mb-4'>
           {project.tags.slice(0, 3).map((tag, i) => (
             <span
@@ -31,7 +31,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '
             </span>
           ))}
           {project.tags.length > 3 && (
-            <span className='px-2 py-1 bg-gray-800 text-gray-400 text-xs rounded-sm font-mono'>
+            <span className='px-2 py-1 bg-gray-800 text-gray-200 text-xs rounded-sm font-mono'>
               +{project.tags.length - 3}
             </span>
           )}
