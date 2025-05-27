@@ -2,12 +2,12 @@ import { Button, SectionHeader } from '@/components/ui'
 import { resume } from '@/data/resume'
 import { FaDownload } from 'react-icons/fa'
 
-export const ProfessionalBackgroundSection: React.FC = () => {
+export const WorkSection: React.FC = () => {
   return (
-    <section className='section-container bg-slate-900' aria-label='Professional Background'>
+    <section className='section-container bg-slate-800' aria-label='Professional Background'>
       <div className='container px-4 mx-auto'>
         <div className='max-w-5xl mx-auto'>
-          <SectionHeader title='Professional Background' className='mt-10' />
+          <SectionHeader title='Professional Background' />
           {/* Work History Timeline */}
           <div className='space-y-6 sm:space-y-8 md:space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-emerald-400/30 ml-6 md:ml-8'>
             {resume.workHistory.map((job, index) => (

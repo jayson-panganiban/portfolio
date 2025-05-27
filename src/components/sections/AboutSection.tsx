@@ -1,14 +1,16 @@
-import { Button, SectionHeader, SkillTag, TerminalWindow } from '@/components/ui'
+import { SectionHeader, SkillTag, TerminalWindow } from '@/components/ui'
 import React from 'react'
 
 const coreSkills = [
   'Automation Testing',
   'Framework Development',
   'API Testing',
+  'UI Testing',
   'Performance Engineering',
   'Chaos Engineering',
   'Devops Practice',
   'LLM Integration',
+  'ML Engineering',
 ]
 
 const skills = [
@@ -33,7 +35,7 @@ export const AboutSection: React.FC = () => {
     <section id='about' className='py-16 md:py-20 bg-gray-800' aria-labelledby='about-heading'>
       <div className='container px-4 mx-auto'>
         <div className='max-w-5xl mx-auto'>
-          <SectionHeader title='About Me' className='mt-10 ' />
+          <SectionHeader title='About Me' />
           <div className='flex flex-col md:flex-row gap-6 md:gap-10 items-center'>
             <article className='w-full md:w-1/2'>
               <TerminalWindow>
@@ -96,16 +98,6 @@ export const AboutSection: React.FC = () => {
                 </div>
               </div>
             </article>
-          </div>
-          <div className='mt-8 md:mt-12 text-center'>
-            <Button
-              href='/about'
-              variant='outline'
-              className='border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 font-mono rounded-sm text-xs sm:text-sm'
-              aria-label='View detailed resume'
-            >
-              cd ./detailed-resume
-            </Button>
           </div>
         </div>
       </div>

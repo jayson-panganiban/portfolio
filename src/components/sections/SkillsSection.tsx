@@ -1,7 +1,7 @@
 import { SectionHeader, TerminalWindow } from '@/components/ui'
 import { resume } from '@/data/resume'
 
-export const SkillsExpertiseSection: React.FC = () => {
+export const SkillsSection: React.FC = () => {
   return (
     <section className='section-container bg-black' aria-label='Skills & Expertise'>
       <div className='container px-4 mx-auto'>

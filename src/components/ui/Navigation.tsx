@@ -17,16 +17,6 @@ export const Navigation: React.FC<NavigationProps> = ({ className = '' }) => {
               </Button>
             </li>
             <li>
-              <Button href='/about' variant='outline'>
-                cd ../about
-              </Button>
-            </li>
-            <li>
-              <Button href='/projects' variant='outline'>
-                cd ../projects
-              </Button>
-            </li>
-            <li>
               <Button href='mailto:jsoncp@proton.me' variant='primary'>
                 ./contact.sh
               </Button>

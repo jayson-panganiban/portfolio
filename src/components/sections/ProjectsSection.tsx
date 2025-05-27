@@ -1,7 +1,7 @@
 import { ProjectCodeDisplay, ProjectWindow, SectionHeader, TerminalWindow } from '@/components/ui'
 import { projects } from '@/data/projects'
 
-export const FeaturedProjectsSection: React.FC = () => {
+export const ProjectsSection: React.FC = () => {
   const featuredOrder = ['HalfPrice Grocery', 'Rephrase', 'PHZipCodesWeb']
 
   // Filter and sort featured projects according to the defined order
@@ -21,7 +21,12 @@ export const FeaturedProjectsSection: React.FC = () => {
         >
           <div className='container px-4 mx-auto'>
             <div className='max-w-5xl mx-auto'>
-              {index === 0 && <SectionHeader title='Featured Projects' className='mb-10' />}
+              {index === 0 && (
+                <SectionHeader
+                  title='Side Quests'
+                  description="A mix of weekend projects that scratched my own itch and fun ideas I couldn't resist building in my spare time."
+                />
+              )}
               <div
                 className={`flex flex-col ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
