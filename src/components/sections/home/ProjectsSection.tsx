@@ -3,7 +3,6 @@ import {
   ProjectCodeDisplay,
   ProjectWindow,
   SectionHeader,
-  TerminalCommand,
   TerminalWindow,
 } from '@/components/ui'
 import { projects } from '@/data/projects'
@@ -16,15 +15,10 @@ export const RecentProjectsSection: React.FC = () => {
     <section className='section-container bg-black' aria-labelledby='projects-heading'>
       <div className='container px-4 mx-auto'>
         <div className='max-w-5xl mx-auto'>
-          <TerminalCommand
-            command='find '
-            args='. -name "projects" | head -1'
-            className='mb-4 md:mb-6'
-          />
-          <SectionHeader title='Recent Projects' className='mb-8 md:mb-12' />
+          <SectionHeader title='Recent Projects' className='mt-10' />
           <ul
             className='space-y-16 md:space-y-24 mb-12 md:mb-16 list-none pl-0'
-            aria-label='Featured Projects'
+            aria-label='Recent Projects'
           >
             <li className='flex flex-col md:flex-row-reverse gap-10 items-center'>
               <TerminalWindow>

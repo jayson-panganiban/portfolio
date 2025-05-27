@@ -1,10 +1,4 @@
-import {
-  ProjectCodeDisplay,
-  ProjectWindow,
-  SectionHeader,
-  TerminalCommand,
-  TerminalWindow,
-} from '@/components/ui'
+import { ProjectCodeDisplay, ProjectWindow, SectionHeader, TerminalWindow } from '@/components/ui'
 import { projects } from '@/data/projects'
 
 export const FeaturedProjectsSection: React.FC = () => {
@@ -27,16 +21,7 @@ export const FeaturedProjectsSection: React.FC = () => {
         >
           <div className='container px-4 mx-auto'>
             <div className='max-w-5xl mx-auto'>
-              {index === 0 && (
-                <>
-                  <TerminalCommand
-                    command='cat'
-                    args='featured-projects.json'
-                    className='mb-4 md:mb-6'
-                  />
-                  <SectionHeader title='Featured Projects' />
-                </>
-              )}
+              {index === 0 && <SectionHeader title='Featured Projects' className='mb-10' />}
               <div
                 className={`flex flex-col ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'

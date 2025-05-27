@@ -1,4 +1,4 @@
-import { Button, SectionHeader, SkillTag, TerminalCommand, TerminalWindow } from '@/components/ui'
+import { Button, SectionHeader, SkillTag, TerminalWindow } from '@/components/ui'
 import React from 'react'
 
 const coreSkills = [
@@ -33,8 +33,7 @@ export const AboutSection: React.FC = () => {
     <section id='about' className='py-16 md:py-20 bg-gray-800' aria-labelledby='about-heading'>
       <div className='container px-4 mx-auto'>
         <div className='max-w-5xl mx-auto'>
-          <TerminalCommand command='cat' args='about.md' className='mb-4 md:mb-6' />
-          <SectionHeader title='About Me' />
+          <SectionHeader title='About Me' className='mt-10 ' />
           <div className='flex flex-col md:flex-row gap-6 md:gap-10 items-center'>
             <article className='w-full md:w-1/2'>
               <TerminalWindow>

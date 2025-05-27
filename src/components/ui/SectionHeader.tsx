@@ -22,14 +22,12 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div className={`mb-8 ${centered ? 'text-center' : ''} ${className}`}>
       <h2
-        className={`text-3xl font-bold mb-2 ${withAccent ? 'h2-gradient' : ''} ${headingClassName}`}
+        className={`text-3xl font-bold mb-4 ${withAccent ? 'h2-gradient' : ''} ${headingClassName}`}
       >
         {title}
       </h2>
       {description && (
-        <p
-          className={`text-sm md:text-base text-slate-700 dark:text-slate-300 ${descriptionClassName}`}
-        >
+        <p className={`text-sm md:text-base text-gray-100 ${descriptionClassName}`}>
           {description}
         </p>
       )}
