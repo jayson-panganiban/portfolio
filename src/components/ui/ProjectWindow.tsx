@@ -22,7 +22,7 @@ export const ProjectWindow: React.FC<ProjectWindowProps> = ({
 }) => {
   return (
     <div className={`w-full ${className}`}>
-      <div className='bg-gray-800 rounded-xl p-6 shadow-[8px_8px_16px_rgba(0,0,0,0.3),_-8px_-8px_16px_rgba(75,85,99,0.1)] border border-gray-700/50 transition-all duration-300 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.4),_-10px_-10px_20px_rgba(75,85,99,0.15)]'>
+      <div className='bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 shadow-[8px_8px_16px_rgba(0,0,0,0.3),_-8px_-8px_16px_rgba(75,85,99,0.1)] border border-gray-700/30 transition-all duration-300 hover:shadow-[10px_10px_20px_rgba(0,0,0,0.4),_-10px_-10px_20px_rgba(75,85,99,0.15)]'>
         <h3 className='mb-3 text-2xl font-semibold text-white'>
           <span className='text-emerald-400'>{'>'}</span> {title}
         </h3>
