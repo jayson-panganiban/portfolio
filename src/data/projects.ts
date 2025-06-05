@@ -16,8 +16,8 @@ export const projects: Project[] = [
     description: 'Find postal codes across the Philippines with ease',
     longDescription:
       'A web application that allows user to find postal codes across the Philippines with ease. From cities to municipalities, provinces, and regions, you can easily find the postal code you need.',
-    tags: ['FastAPI', 'HTMX', 'TailwindCSS', 'Web Static', 'phzipcodes'],
-    github: 'https://github.com/jayson-panganiban/phzipcodes-web',
+    tags: ['TypeScript', 'NextJS', 'TailwindCSS', 'Playwright', 'Web Static', 'phzipcodes'],
+    github: 'https://github.com/jayson-panganiban/ph-zip-codes',
     website: 'https://www.phzipcodes.com',
     featured: true,
   },
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     title: 'Rephrase',
     description: 'CLI tool for rephrasing text with multiple style options',
     longDescription:
-      "A command-line tool to rephrase text in different styles (normal (default), casual, formal, academic, or filipino taglish for some 🧂) using OpenAI's API.",
+      "A command-line tool to rephrase text in different styles using OpenAI's API. It supports various styles like formal, casual, and more, making it easy to generate alternative phrasings for any given text.",
     tags: ['Python', 'CLI', 'OpenAI', 'NLP', 'English', 'Taglish'],
     github: 'https://github.com/jayson-panganiban/rephrase',
     website: 'https://pypi.org/project/rephrase/',
@@ -63,5 +63,15 @@ export const projects: Project[] = [
     github: 'https://github.com/jayson-panganiban/phzipcodes',
     website: 'https://pypi.org/project/phzipcodes/',
     featured: false,
+  },
+  {
+    id: 6,
+    title: '🚗 FAQ Mate',
+    description: 'Aussie Car Insurance RAG Chatbot',
+    longDescription:
+      'A RAG (Retrieval-Augmented Generation) chatbot designed to answer frequently asked questions about car insurance in Australia.',
+    tags: ['FastAPI', 'Pydantic-AI', 'Gradio', 'ChromaDB', 'Llama Index', 'RAG', 'OpenAI'],
+    website: 'https://huggingface.co/spaces/jaysoncp/FAQ-Mate',
+    featured: true,
   },
 ]

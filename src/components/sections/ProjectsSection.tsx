@@ -2,7 +2,12 @@ import { ProjectCodeDisplay, ProjectWindow, SectionHeader, TerminalWindow } from
 import { projects } from '@/data/projects'
 
 export const ProjectsSection: React.FC = () => {
-  const featuredOrder = ['HalfPrice Grocery', 'Rephrase', 'PHZipCodesWeb']
+  const featuredOrder = [
+    '🚗 FAQ Mate',
+    'HalfPrice Grocery',
+    'Philippine ZIP Codes Search',
+    'Rephrase',
+  ]
 
   // Filter and sort featured projects according to the defined order
   const featuredProjects = projects

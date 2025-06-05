@@ -1,4 +1,5 @@
 export { DefaultCodeSnippet } from './DefaultCodeSnippet'
+export { FAQMateSnippet } from './FAQMateSnippet'
 export { HalfPriceGrocerySnippet } from './HalfPriceGrocerySnippet'
 export { PHZipCodesSnippet } from './PHZipCodesSnippet'
 export { PHZipCodesWebSnippet } from './PHZipCodesWebSnippet'

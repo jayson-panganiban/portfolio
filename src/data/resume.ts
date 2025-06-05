@@ -1,21 +1,28 @@
-export interface WorkHistoryItem {
+export type WorkHistoryItem = {
   title: string
   company: string
   period: string
   description: string
 }
 
-export interface SkillCategory {
+export type SkillCategory = {
   name: string
   skills: string[]
 }
 
-export interface IndustryExperience {
+export type IndustryExperience = {
   industry: string
   description: string
 }
 
-export interface ResumeData {
+export type SocialLink = {
+  name: string
+  url: string
+  icon: string
+  ariaLabel: string
+}
+
+export type ResumeData = {
   name: string
   title: string
   email: string
@@ -25,6 +32,8 @@ export interface ResumeData {
   technicalSkills: SkillCategory[]
   industryExperience: IndustryExperience[]
   resumeLink: string
+  portfolioUrl: string
+  socialLinks: SocialLink[]
 }
 
 export const resume: ResumeData = {
@@ -40,7 +49,7 @@ export const resume: ResumeData = {
       company: 'Datacom',
       period: '2022 - Present',
       description:
-        'Currently deployed at IAG working on outbound customer communications systems. Responsible for testing claims, policies, schedules and multi-channel delivery methods including email, fax, print and SMS. Ensuring seamless and accurate customer-facing communications across diverse platforms.',
+        'Currently deployed at IAG working on customer outbound communications systems. Responsible for testing claims, policies, schedules and multi-channel delivery methods including email, fax, print and SMS. Ensuring seamless and accurate customer-facing communications across diverse platforms.',
     },
     {
       title: 'Software Engineer in Automation',
@@ -83,20 +92,22 @@ export const resume: ResumeData = {
   technicalSkills: [
     {
       name: 'Programming Languages',
-      skills: ['Python', 'JavaScript/TypeScript', 'Java'],
+      skills: ['Python', 'JavaScript/TypeScript', 'Java', 'Ruby'],
     },
     {
       name: 'Automation Testing',
       skills: [
         'Playwright',
         'Selenium',
-        'Pytest',
-        'Jest',
         'RobotFramework',
         'Cucumber',
         'Cypress',
+        'Specflow',
         'Gauge',
         'Puppeteer',
+        'Tosca',
+        'Pytest',
+        'Jest',
       ],
     },
     {
@@ -106,6 +117,10 @@ export const resume: ResumeData = {
     {
       name: 'DevOps & CI/CD',
       skills: ['Jenkins', 'GitHub Actions', 'Docker', 'AWS'],
+    },
+    {
+      name: 'AI / ML Integration',
+      skills: ['RAG', 'Langchain', 'LlamaIndex', 'OpenAI', 'Vector DB'],
     },
   ],
 
@@ -134,4 +149,27 @@ export const resume: ResumeData = {
   ],
 
   resumeLink: '/ResumeJaysonPanganiban.pdf',
+  portfolioUrl: 'https://www.jaysonpanganiban.com',
+
+  socialLinks: [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/jayson-panganiban',
+      icon: 'FaGithub',
+      ariaLabel: 'Visit my GitHub profile',
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/jayson-panganiban/',
+      icon: 'FaLinkedin',
+      ariaLabel: 'Visit my LinkedIn profile',
+    },
+    {
+      name: 'Email',
+      url: 'mailto:json.panganiban@gmail.com',
+      icon: 'FaEnvelope',
+      ariaLabel: 'Send me an email',
+    },
+    // TODO: Add HuggingFace when available
+  ],
 }

@@ -2,6 +2,7 @@ import { ReactElement } from 'react'
 import { Project } from '../../data/projects'
 import {
   DefaultCodeSnippet,
+  FAQMateSnippet,
   HalfPriceGrocerySnippet,
   PHZipCodesSnippet,
   PHZipCodesWebSnippet,
@@ -26,6 +27,8 @@ export const ProjectCodeDisplay: React.FC<ProjectCodeDisplayProps> = ({ project 
         return <RestInPytestSnippet />
       case 5:
         return <PHZipCodesSnippet />
+      case 6:
+        return <FAQMateSnippet />
       default:
         return <DefaultCodeSnippet />
     }
