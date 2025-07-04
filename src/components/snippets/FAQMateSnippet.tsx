@@ -13,9 +13,9 @@ export const FAQMateSnippet = () => (
     </div>
     <div className='mb-2'>
       <span className='text-blue-300'>INFO:faq_mate.rag:</span>
-      <span className='text-gray-300'>Loaded existing index with </span>
+      <span className='text-gray-200'>Loaded existing index with </span>
       <span className='text-yellow-300'>852</span>
-      <span className='text-gray-300'> documents</span>
+      <span className='text-gray-200'> documents</span>
     </div>
     <div className='mb-3'>
       <span className='text-green-400'>✅ Ready! Loaded </span>
@@ -27,10 +27,10 @@ export const FAQMateSnippet = () => (
       <span className='text-emerald-400'>FAQ Mate - Australian Car Insurance Assistant</span>
     </div>
     <div className='mb-1'>
-      <span className='text-gray-300'>Ask me anything about car insurance in Australia!</span>
+      <span className='text-gray-200'>Ask me anything about car insurance in Australia!</span>
     </div>
     <div className='mb-2'>
-      <span className='text-gray-300'>
+      <span className='text-gray-200'>
         Type &apos;quit&apos; to exit, &apos;help&apos; for commands.
       </span>
     </div>

@@ -11,7 +11,7 @@ interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) => {
   return (
     <div
-      className={`bg-gray-900 rounded-lg overflow-hidden border border-emerald-500/20 hover:border-emerald-500/40 transition-all duration-300 shadow-[0_10px_20px_rgba(0,0,0,0.4)] hover:shadow-[0_15px_30px_rgba(0,0,0,0.5),_0_0_10px_rgba(16,185,129,0.1)] hover:-translate-y-1 ${className}`}
+      className={`bg-slate-800/50 rounded-lg overflow-hidden border border-emerald-500/20 hover:border-emerald-500/40 transition-all duration-300 shadow-[0_10px_20px_rgba(0,0,0,0.4)] hover:shadow-[0_15px_30px_rgba(0,0,0,0.5),_0_0_10px_rgba(16,185,129,0.1)] hover:-translate-y-1 ${className}`}
     >
       <div className='h-48 bg-gray-800 p-4 font-mono text-xs overflow-hidden'>
         <ProjectCodeDisplay project={project} />

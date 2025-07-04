@@ -47,15 +47,15 @@ export const HeroSection: React.FC = () => {
                   <span className='text-emerald-400'>$</span> echo $SPECIALIZATIONS
                 </p>
                 <p
-                  className='text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed'
+                  className='text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed'
                   aria-label='Core skills'
                 >
                   <span className='text-yellow-300'>Automation</span>{' '}
-                  <span className='ml-1 animate-pulse text-gray-300' aria-hidden='true'>
+                  <span className='ml-1 animate-pulse text-gray-200' aria-hidden='true'>
                     |
                   </span>{' '}
                   <span className='text-yellow-300'>Performance</span>
-                  <span className='ml-1 animate-pulse text-gray-300' aria-hidden='true'>
+                  <span className='ml-1 animate-pulse text-gray-200' aria-hidden='true'>
                     |
                   </span>{' '}
                   <span className='text-yellow-300'>Machine Learning</span>
@@ -67,7 +67,7 @@ export const HeroSection: React.FC = () => {
                 <p className='text-gray-200 text-sm md:text-base mb-3'>
                   <span className='text-emerald-400'>$</span> cat about.txt
                 </p>
-                <p className='text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed'>
+                <p className='text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed'>
                   QA Engineer passionate about breaking things professionally through automation and
                   performance testing. I help teams deliver reliable, high-quality software across
                   multiple industries.
@@ -90,7 +90,7 @@ export const HeroSection: React.FC = () => {
                     className='border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 font-mono rounded-sm text-sm'
                   >
                     <FaDownload size={12} />
-                    <span className='ml-2'>download resume.pdf</span>
+                    <span className='ml-2 text-yellow-300'>download resume.pdf</span>
                   </Button>
                 </div>
               </div>

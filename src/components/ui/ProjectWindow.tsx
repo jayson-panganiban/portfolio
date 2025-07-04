@@ -26,7 +26,7 @@ export const ProjectWindow: React.FC<ProjectWindowProps> = ({
         <h3 className='mb-3 text-2xl font-semibold text-white'>
           <span className='text-emerald-400'>{'>'}</span> {title}
         </h3>
-        <p className='mb-6 leading-relaxed text-gray-400'>{description}</p>
+        <p className='mb-6 leading-relaxed text-gray-200'>{description}</p>
 
         <div className='mb-6 flex flex-wrap gap-2'>
           {tags.map((tag, i) => (
@@ -45,7 +45,7 @@ export const ProjectWindow: React.FC<ProjectWindowProps> = ({
               aria-label={`View ${title} GitHub repository`}
             >
               <FaGithub size={14} />
-              git clone
+              <span>git clone</span>
             </Button>
           )}
           {website && (
@@ -58,7 +58,7 @@ export const ProjectWindow: React.FC<ProjectWindowProps> = ({
               aria-label={`Open ${title} website`}
             >
               <FaExternalLinkAlt size={12} />
-              open site
+              <span>open site</span>
             </Button>
           )}
         </div>

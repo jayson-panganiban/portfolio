@@ -14,29 +14,24 @@ export const ProjectsSection: React.FC = () => {
     .filter(project => project.featured)
     .sort((a, b) => featuredOrder.indexOf(a.title) - featuredOrder.indexOf(b.title))
 
-  const bgColors = ['bg-black', 'bg-gray-900', 'bg-black']
-
   return (
-    <>
-      {featuredProjects.map((project, index) => (
-        <section
-          key={project.id}
-          className={`py-12 md:py-20 ${bgColors[index % bgColors.length]} transition-colors duration-500`}
-          aria-labelledby={`project-${project.id}`}
-        >
-          <div className='container px-4 mx-auto'>
-            <div className='max-w-5xl mx-auto'>
-              {index === 0 && (
-                <SectionHeader
-                  title='Projects'
-                  description="A mix of weekend projects that scratched my own itch and fun ideas I couldn't resist building in my spare time."
-                />
-              )}
-              <div
-                className={`flex flex-col ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } gap-6 md:gap-10 items-center`}
-              >
+    <section
+      className=' bg-black border-emerald-900/10 py-12 md:py-24'
+      aria-labelledby='projects-heading'
+    >
+      <div className='container px-4 mx-auto'>
+        <div className='max-w-5xl mx-auto'>
+          <SectionHeader
+            title='Projects'
+            description="A mix of weekend projects that scratched my own itch and fun ideas I couldn't resist building in my spare time."
+          />
+          {featuredProjects.map((project, index) => (
+            <section
+              key={project.id}
+              className={`py-2 md:py-6 transition-colors duration-500 rounded-xl mb-12 md:mb-16`}
+              aria-labelledby={`projecResumeJaysonPanganiban.pdft-${project.id}`}
+            >
+              <div className='flex flex-col md:flex-row gap-6 md:gap-10 items-center'>
                 <TerminalWindow title={project.title} className='w-full md:w-1/2'>
                   <div className='text-gray md:text-sm text-base' style={{ lineHeight: '1.5' }}>
                     <ProjectCodeDisplay project={project} />
@@ -51,10 +46,10 @@ export const ProjectsSection: React.FC = () => {
                   className='w-full md:w-1/2'
                 />
               </div>
-            </div>
-          </div>
-        </section>
-      ))}
-    </>
+            </section>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }

@@ -7,15 +7,15 @@ export const HalfPriceGrocerySnippet = () => (
     </span>
     <TerminalCommand command='cd' args='halfprice-grocery' />
     <TerminalCommand command='ls' args='-l' />
-    <div className='text-gray-300 '>
+    <div className='text-gray-200 '>
       <span className='text-blue-400 font-medium'>backend/</span>{' '}
       <span className='text-blue-400 font-medium'>frontend/</span>{' '}
       <span className='text-yellow-300'>docker-compose.yml</span>{' '}
-      <span className='text-gray-300'>README.md</span>{' '}
-      <span className='text-gray-300'>package.json</span>
+      <span className='text-gray-200'>README.md</span>{' '}
+      <span className='text-gray-200'>package.json</span>
     </div>
 
-    <div className='mt-3 text-gray-300'>
+    <div className='mt-3 text-gray-200'>
       <TerminalCommand command='npm' args='start' />
       <span className='text-white font-medium block mt-2'>Starting servers... 🚀</span>
     </div>

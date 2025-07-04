@@ -28,7 +28,6 @@ export type ResumeData = {
   email: string
   intro: string
   workHistory: WorkHistoryItem[]
-  coreSkills: string[]
   technicalSkills: SkillCategory[]
   industryExperience: IndustryExperience[]
   resumeLink: string
@@ -81,46 +80,68 @@ export const resume: ResumeData = {
     },
   ],
 
-  coreSkills: [
-    'Automation Testing',
-    'Performance Engineering',
-    'Devops Practice',
-    'Framework Development',
-    'LLM Integration',
-  ],
-
   technicalSkills: [
     {
-      name: 'Programming Languages',
-      skills: ['Python', 'JavaScript/TypeScript', 'Java', 'Ruby'],
+      name: 'Core Skills',
+      skills: [
+        'Test Automation',
+        'Performance Testing',
+        'Chaos Testing',
+        'API Testing',
+        'CI/CD Integration',
+        'ML/AI Integration',
+      ],
     },
     {
-      name: 'Automation Testing',
+      name: 'Automation',
       skills: [
         'Playwright',
         'Selenium',
+        'Cypress',
         'RobotFramework',
         'Cucumber',
-        'Cypress',
         'Specflow',
-        'Gauge',
-        'Puppeteer',
         'Tosca',
+        'Gauge',
         'Pytest',
         'Jest',
       ],
     },
     {
       name: 'Performance Engineering',
-      skills: ['LocustIO', 'JMeter', 'K6'],
+      skills: ['LocustIO', 'JMeter', 'K6', 'Gremlin'],
     },
+    {
+      name: 'Testing Tools',
+      skills: ['Postman', 'SoapUI', 'Jest', 'Swagger', 'Chrome DevTools'],
+    },
+    {
+      name: 'Programming Languages',
+      skills: ['Python', 'JavaScript/TypeScript', 'Ruby'],
+    },
+
     {
       name: 'DevOps & CI/CD',
       skills: ['Jenkins', 'GitHub Actions', 'Docker', 'AWS'],
     },
     {
       name: 'AI / ML Integration',
-      skills: ['RAG', 'Langchain', 'LlamaIndex', 'OpenAI', 'Vector DB'],
+      skills: ['RAG', 'OpenAI', 'Vector DB', 'Prompt Engineering'],
+    },
+    {
+      name: 'Development',
+      skills: [
+        'NextJS',
+        'React',
+        'ExpressJS',
+        'FastAPI',
+        'Pydantic',
+        'Tailwind',
+        'Jinja2',
+        'PostGreSQL',
+        'SQLite3',
+        'MongoDB',
+      ],
     },
   ],
 
@@ -148,7 +169,7 @@ export const resume: ResumeData = {
     },
   ],
 
-  resumeLink: '/ResumeJaysonPanganiban.pdf',
+  resumeLink: '/JaysonPanganiban_CV.pdf',
   portfolioUrl: 'https://www.jaysonpanganiban.com',
 
   socialLinks: [
