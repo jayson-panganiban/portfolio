@@ -1,77 +1,51 @@
 export interface Project {
-  id: number
-  title: string
-  description: string
-  longDescription: string
-  tags: string[]
-  github?: string
-  website?: string
-  featured: boolean
+	id: string
+	title: string
+	description: string
+	technologies?: string[]
+	link?: string
 }
 
-export const projects: Project[] = [
-  {
-    id: 1,
-    title: 'Philippine ZIP Codes Search',
-    description: 'Find postal codes across the Philippines with ease',
-    longDescription:
-      'A web application that allows user to find postal codes across the Philippines with ease. From cities to municipalities, provinces, and regions, you can easily find the postal code you need.',
-    tags: ['TypeScript', 'NextJS', 'TailwindCSS', 'Playwright', 'Web Static', 'phzipcodes'],
-    github: 'https://github.com/jayson-panganiban/ph-zip-codes',
-    website: 'https://www.phzipcodes.com',
-    featured: true,
-  },
-  {
-    id: 2,
-    title: 'HalfPrice Grocery',
-    description: 'Browse half-price specials from Australian supermarkets',
-    longDescription:
-      'HalfPrice Grocery is a comprehensive full-stack application that features half-price specials on various products from major Coles and Woolworths. It offers a user-friendly interface for browsing, filtering and searching for deals, as well as saving favorite items for quick access.',
-    tags: ['ReactJS', 'CRA', 'ExpressJS', 'ChartJS', 'MongoDB', 'Playwright'],
-    website: 'https://www.halfpricegrocery.com',
-    featured: true,
-  },
-  {
-    id: 3,
-    title: 'Rephrase',
-    description: 'CLI tool for rephrasing text with multiple style options',
-    longDescription:
-      "A command-line tool to rephrase text in different styles using OpenAI's API. It supports various styles like formal, casual, and more, making it easy to generate alternative phrasings for any given text.",
-    tags: ['Python', 'CLI', 'OpenAI', 'NLP', 'English', 'Taglish'],
-    github: 'https://github.com/jayson-panganiban/rephrase',
-    website: 'https://pypi.org/project/rephrase/',
-    featured: true,
-  },
-  {
-    id: 4,
-    title: 'Rest in PyTest (RiP)',
-    description:
-      'A PyTest-based framework for RESTful API testing in Domain Specific Language (DSL)',
-    longDescription:
-      'Rest-in-PyTest is a testing framework built on top of PyTest that specializes in RESTful API testing. Inspired by Rest Assured, it provides a structured way to create, organize, and execute API tests.',
-    tags: ['Python', 'PyTest', 'API Testing', 'Automation', 'DSL', 'gherkin'],
-    github: 'https://github.com/jayson-panganiban/rest-in-pytest',
-    featured: false,
-  },
-  {
-    id: 5,
-    title: 'PHZipCodes',
-    description: 'A Python package for searching and accessing Philippine ZIP codes',
-    longDescription:
-      'This Python package provides functionalities to find zip codes by city, municipality, province, and region in the Philippines.',
-    tags: ['Python', 'Philippines', 'Zip code', 'Postal code', 'Package'],
-    github: 'https://github.com/jayson-panganiban/phzipcodes',
-    website: 'https://pypi.org/project/phzipcodes/',
-    featured: false,
-  },
-  {
-    id: 6,
-    title: '🚗 FAQ Mate',
-    description: 'Aussie Car Insurance RAG Chatbot',
-    longDescription:
-      'A RAG (Retrieval-Augmented Generation) chatbot designed to answer frequently asked questions about car insurance in Australia.',
-    tags: ['FastAPI', 'Pydantic-AI', 'Gradio', 'ChromaDB', 'Llama Index', 'RAG', 'OpenAI'],
-    website: 'https://huggingface.co/spaces/jaysoncp/FAQ-Mate',
-    featured: true,
-  },
+export const projectsData: Project[] = [
+	{
+		id: '1',
+		title: 'Halfprice Grocery',
+		description:
+			'A full-stack application showcasing half-price specials from Coles and Woolworths. It provides a seamless user experience with advanced browsing, filtering, and search capabilities, along with functionality to save favorite deals for quick retrieval.',
+		technologies: [
+			'Javascript',
+			'ReactJS',
+			'ExpressJS',
+			'NodeJS',
+			'MongoDB',
+			'CSS',
+			'Playwright',
+			'Jest',
+		],
+		link: 'https://halfpricegrocery.com',
+	},
+	{
+		id: '2',
+		title: 'Philippine ZIP Codes Search',
+		description:
+			'A web app that makes finding postal codes across the Philippines simple. Whether you’re searching by city, municipality, province, or region, it helps you quickly locate the postal code you need.',
+		technologies: ['Typescript', 'ReactJS', 'NextJS', 'TailwindCSS', 'Playwright'],
+		link: 'https://phzipcodes.com',
+	},
+	{
+		id: '3',
+		title: 'FAQ Mate',
+		description:
+			'A RAG (Retrieval-Augmented Generation) chatbot designed to answer frequently asked questions about car insurance in Australia.',
+		technologies: ['FastAPI', 'Python', 'OpenAI', 'ChromaDB', 'Gradio'],
+		link: 'https://huggingface.co/spaces/jaysoncp/FAQ-Mate',
+	},
+	{
+		id: '4',
+		title: 'Reprase CLI',
+		description:
+			'A simple command-line tool that leverages OpenAI to help users rephrase sentences or paragraphs in different tones and styles.',
+		technologies: ['Python', 'OpenAI', 'ChromaDB', 'NLP'],
+		link: 'https://pypi.org/project/rephrase/',
+	},
 ]

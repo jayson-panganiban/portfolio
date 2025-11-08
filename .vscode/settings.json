@@ -1,34 +1,8 @@
 {
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  },
-  "files.exclude": {
-    "**/.next": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/out": true
-  },
-  "files.associations": {
-    "*.jsx": "javascriptreact",
-    "*.tsx": "typescriptreact"
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.workingDirectories": [
-    "./"
-  ],
-  "tailwindCSS.includeLanguages": {
-    "javascript": "javascript",
-    "javascriptreact": "javascript",
-    "typescript": "typescript",
-    "typescriptreact": "typescript"
-  },
-  "css.validate": false,
-  "tailwindCSS.emmetCompletions": true
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "always",
+		"source.organizeImports.biome": "always"
+	},
+	"editor.defaultFormatter": "biomejs.biome"
 }
