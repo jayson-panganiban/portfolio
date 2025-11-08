@@ -19,8 +19,7 @@ export default function ResumePage() {
 						</a>
 					</div>
 				</div>
-
-				<div className='space-y-12'>
+				<div className='space-y-10'>
 					{resume.workHistory.map(job => (
 						<article key={job.company + job.period} className='grid gap-3 md:grid-cols-[200px_1fr]'>
 							<div className='space-y-1'>
@@ -33,8 +32,8 @@ export default function ResumePage() {
 								)}
 							</div>
 							<div>
-								<h3 className='mb-3 text-xl font-semibold tracking-tight'>{job.title}</h3>
-								<p className='leading-relaxed text-gray-600 dark:text-gray-400'>
+								<h3 className='mb-2 text-xl font-semibold tracking-tight'>{job.title}</h3>
+								<p className='leading-relaxed text-gray-700 dark:text-gray-300'>
 									{job.description}
 								</p>
 							</div>

@@ -17,21 +17,9 @@
 		font-display: swap;
 	}
 
-	:root {
-		--background-light: #fcfcf9;
-		--background-dark: #121212;
-		--primary: #d2691e;
-		--primary-light: #e07a3e;
-		--primary-dark: #b85a14;
-		--accent: #cd5c5c;
-		--accent-light: #e9967a;
-		--text-dark: #111827;
-		--text-light: #fcfcf9;
-	}
-
 	body {
-		background-color: var(--background-light);
-		color: var(--text-dark);
+		background-color: #fcfcf9;
+		color: #111827;
 		font-weight: 400;
 		letter-spacing: 0.005em;
 		transition-property: color, background-color;
@@ -39,8 +27,8 @@
 	}
 
 	:root[class~="dark"] body {
-		background-color: var(--background-dark);
-		color: var(--text-light);
+		background-color: #121212;
+		color: #fcfcf9;
 	}
 
 	* {

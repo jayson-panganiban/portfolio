@@ -40,13 +40,13 @@ export type ResumeData = {
 
 export const resume: ResumeData = {
 	name: 'Jayson Panganiban',
-	title: 'QA Engineer | Automation | Performance | AI/ML',
+	title: 'SDET | Automation | Performance',
 	location: 'Melbourne, Australia',
 	email: 'jsoncp@proton.me',
 	workInfo:
-		"For the past decade, I've helped teams build software that stands up in the real world. From financial systems to crypto platforms, I turn complex testing challenges into scalable, automated solutions. My work spans automation strategy, performance engineering, chaos testing, and exploring how AI and machine learning can advance modern testing. I focus on fine-tuning systems, optimizing performance, and catching failures before they reach production.",
+		"For the past decade, I've helped teams build software that stands up in the real world. My work spans test automation, performance engineering, chaos testing, and exploring how AI and machine learning can advance modern testing. My focus is building fast, reliable automation that streamlines releases and catches issues before they reach production.",
 	personalInfo:
-		"Outside of tech, I'm a dad of two, a guitar player with more enthusiasm than talent, and a classic 'middle of the pack' runner, gravel cyclist, and hiker. When I'm not debugging something, I'm probably outside pretending 'average' is just another word for 'elite,' or messing around with side projects that I promise I'll finish someday.",
+		"Outside of tech, I'm a dad of two who loves picking up the guitar, and an average runner, gravel cyclist, and hiker. When I'm not debugging something, I'm probably outside happily embracing my decidedly average pace or messing around with side projects that I promise I'll finish someday.",
 	workHistory: [
 		{
 			title: 'Senior Consultant - Test Analyst',
@@ -107,7 +107,7 @@ export const resume: ResumeData = {
 			skills: ['Python', 'JavaScript', 'TypeScript', 'Ruby on Rails'],
 		},
 		{
-			name: 'Automation',
+			name: 'Test Automation',
 			skills: [
 				'Playwright',
 				'Selenium',
@@ -117,8 +117,6 @@ export const resume: ResumeData = {
 				'Specflow',
 				'Tosca',
 				'Gauge',
-				'Pytest',
-				'Jest',
 			],
 		},
 		{
@@ -126,31 +124,31 @@ export const resume: ResumeData = {
 			skills: ['LocustIO', 'JMeter', 'K6', 'Gremlin'],
 		},
 		{
-			name: 'Testing Tools',
-			skills: ['Postman', 'SoapUI', 'Jest', 'Chrome DevTools'],
+			name: 'Software Development',
+			skills: [
+				'ReactJS',
+				'ExpressJS',
+				'TailwindCSS',
+				'FastAPI',
+				'Pydantic',
+				'Jinja2',
+				'PostgreSQL',
+				'SQLite3',
+				'MongoDB',
+			],
+		},
+		{
+			name: 'AI / ML Integration',
+			skills: ['RAG', 'NLP', 'MCP', 'Vector DB', 'ChromaDB', 'HuggingFace'],
 		},
 		{
 			name: 'DevOps & CI/CD',
 			skills: ['Jenkins', 'GitHub Actions', 'Docker', 'AWS'],
 		},
+
 		{
-			name: 'AI / ML Integration',
-			skills: ['RAG', 'OpenAI', 'Vector DB', 'Prompt Engineering', 'MCP'],
-		},
-		{
-			name: 'Development',
-			skills: [
-				'NextJS',
-				'React',
-				'ExpressJS',
-				'FastAPI',
-				'Pydantic',
-				'TailwindCSS',
-				'Jinja2',
-				'PostGreSQL',
-				'SQLite3',
-				'MongoDB',
-			],
+			name: 'Testing Tools',
+			skills: ['Postman', 'SoapUI', 'Chrome DevTools'],
 		},
 	],
 

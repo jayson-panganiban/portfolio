@@ -34,7 +34,7 @@ export default function ProjectsPage() {
 									{project.technologies.join(' · ')}
 								</p>
 							)}
-							<p className='leading-relaxed text-gray-600 dark:text-gray-400'>
+							<p className='leading-relaxed text-gray-700 dark:text-gray-300'>
 								{project.description}
 							</p>
 						</article>

@@ -37,7 +37,7 @@ export const projectsData: Project[] = [
 		title: 'FAQ Mate',
 		description:
 			'A RAG (Retrieval-Augmented Generation) chatbot designed to answer frequently asked questions about car insurance in Australia.',
-		technologies: ['FastAPI', 'Python', 'OpenAI', 'ChromaDB', 'Gradio'],
+		technologies: ['Python', 'FastAPI', 'OpenAI', 'ChromaDB', 'Gradio', 'HuggingFace'],
 		link: 'https://huggingface.co/spaces/jaysoncp/FAQ-Mate',
 	},
 	{
@@ -45,7 +45,7 @@ export const projectsData: Project[] = [
 		title: 'Reprase CLI',
 		description:
 			'A simple command-line tool that leverages OpenAI to help users rephrase sentences or paragraphs in different tones and styles.',
-		technologies: ['Python', 'OpenAI', 'ChromaDB', 'NLP'],
+		technologies: ['Python', 'OpenAI', 'NLP', 'Filipino'],
 		link: 'https://pypi.org/project/rephrase/',
 	},
 ]

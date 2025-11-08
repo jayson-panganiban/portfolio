@@ -14,7 +14,7 @@ export function Navigation() {
 					<Link
 						key={link.name}
 						href={link.href}
-						className='font-medium text-primary transition-colors hover:text-primary-dark dark:text-primary-light dark:hover:text-accent-light'
+						className='font-medium text-gray-900 transition-colors hover:text-primary-dark dark:text-primary-light dark:hover:text-accent-light'
 					>
 						{link.name}
 					</Link>
