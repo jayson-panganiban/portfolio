@@ -10,7 +10,6 @@ export function useSwipeNavigation(threshold = 50) {
 
 	return useSwipeable({
 		onSwipedLeft: () => {
-			router.forward()
 			scrollToTop()
 		},
 		onSwipedRight: () => {
