@@ -1,3 +1,4 @@
+import { SwipeNavigation } from '@/components/SwipeNavigation'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import './globals.css'
 
@@ -8,9 +9,11 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang='en' suppressHydrationWarning className='scroll-smooth'>
+		<html lang='en' data-scroll-behavior='smooth'>
 			<body className='font-sans antialiased'>
-				<ThemeProvider>{children}</ThemeProvider>
+				<SwipeNavigation>
+					<ThemeProvider>{children}</ThemeProvider>
+				</SwipeNavigation>
 			</body>
 		</html>
 	)
