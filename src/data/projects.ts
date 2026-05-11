@@ -1,51 +1,50 @@
 export interface Project {
 	id: string
 	title: string
-	description: string
-	technologies?: string[]
-	link?: string
+	summary: string
+	stack: string
+	outcome: string
+	href: string
 }
 
 export const projectsData: Project[] = [
 	{
-		id: '1',
+		id: 'halfprice-grocery',
 		title: 'Halfprice Grocery',
-		description:
-			'A full-stack application showcasing half-price specials from Coles and Woolworths. It provides a seamless user experience with advanced browsing, filtering, and search capabilities, along with functionality to save favorite deals for quick retrieval.',
-		technologies: [
-			'Javascript',
-			'ReactJS',
-			'ExpressJS',
-			'NodeJS',
-			'MongoDB',
-			'CSS',
-			'Playwright',
-			'Jest',
-		],
-		link: 'https://halfpricegrocery.com',
+		summary:
+			'A full-stack grocery deals platform that helps shoppers find half-price specials from Coles and Woolworths faster.',
+		stack: 'React · Node.js · Express.js · MongoDB · Playwright · Jest',
+		outcome:
+			'Turns weekly specials into a cleaner, faster product experience with search, filters, and saved deals.',
+		href: 'https://halfpricegrocery.com',
 	},
 	{
-		id: '2',
+		id: 'philippine-zip-codes-search',
 		title: 'Philippine ZIP Codes Search',
-		description:
-			'A web app that makes finding postal codes across the Philippines simple. Whether you’re searching by city, municipality, province, or region, it helps you quickly locate the postal code you need.',
-		technologies: ['Typescript', 'ReactJS', 'NextJS', 'TailwindCSS', 'Playwright'],
-		link: 'https://phzipcodes.com',
+		summary:
+			'A clean search tool for finding postal codes across cities, municipalities, provinces, and regions in the Philippines.',
+		stack: 'Next.js · React · TypeScript · Tailwind CSS · Playwright',
+		outcome:
+			'Simplifies postal code lookup into a fast, dependable reference tool for everyday use.',
+		href: 'https://phzipcodes.com',
 	},
 	{
-		id: '3',
+		id: 'faq-mate',
 		title: 'FAQ Mate',
-		description:
-			'A RAG (Retrieval-Augmented Generation) chatbot designed to answer frequently asked questions about car insurance in Australia.',
-		technologies: ['Python', 'FastAPI', 'OpenAI', 'ChromaDB', 'Gradio', 'HuggingFace'],
-		link: 'https://huggingface.co/spaces/jaysoncp/FAQ-Mate',
+		summary:
+			'A retrieval-augmented chatbot that answers common Australian car insurance questions using an AI-backed knowledge workflow.',
+		stack: 'Python · FastAPI · OpenAI API · Chroma · Gradio · Hugging Face',
+		outcome:
+			'Applies RAG and AI workflows to make insurance information easier to retrieve and understand.',
+		href: 'https://huggingface.co/spaces/jaysoncp/FAQ-Mate',
 	},
 	{
-		id: '4',
-		title: 'Reprase CLI',
-		description:
-			'A simple command-line tool that leverages OpenAI to help users rephrase sentences or paragraphs in different tones and styles.',
-		technologies: ['Python', 'OpenAI', 'NLP', 'Filipino'],
-		link: 'https://pypi.org/project/rephrase/',
+		id: 'rephrase-cli',
+		title: 'Rephrase CLI',
+		summary:
+			'A lightweight command-line tool that rewrites text in different tones and styles using OpenAI.',
+		stack: 'Python · OpenAI API · NLP',
+		outcome: 'Brings flexible tone and style rewriting into a simple terminal-based writing tool.',
+		href: 'https://pypi.org/project/rephrase/',
 	},
 ]

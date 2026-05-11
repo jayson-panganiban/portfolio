@@ -4,6 +4,11 @@ import { createContext, useContext, useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
 
+const themeColors: Record<Theme, string> = {
+	light: '#FAF9F5',
+	dark: '#171614',
+}
+
 interface ThemeContextType {
 	theme: Theme
 	toggleTheme: () => void
@@ -38,6 +43,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 		} else {
 			root.classList.remove('dark')
 		}
+
+		const themeColorTags = document.querySelectorAll('meta[name="theme-color"]')
+		for (const tag of themeColorTags) {
+			tag.setAttribute('content', themeColors[theme])
+			tag.removeAttribute('media')
+		}
+
 		localStorage.setItem('theme', theme)
 	}, [theme, mounted])
 

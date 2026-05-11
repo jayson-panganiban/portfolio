@@ -1,13 +1,13 @@
 # Portfolio
 
-My personal portfolio website built with Next.js and TailwindCSS. View live at [jaysonpanganiban.com](https://jaysonpanganiban.com)
+My personal portfolio website built with Next.js and Tailwind CSS. View live at [jaysonpanganiban.com](https://jaysonpanganiban.com)
 
 ## Stack
 
 - Next.js 15 (App Router)
 - React 19
 - TypeScript
-- TailwindCSS
+- Tailwind CSS
 - Phosphor Icons
 
 ## Development

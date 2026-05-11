@@ -10,20 +10,17 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#D2691E', // terracotta
-					light: '#E07A3E', // lighter terracotta
-					dark: '#B85A14', // darker terracotta
-				},
-				accent: {
-					DEFAULT: '#CD5C5C', // indian red / coral terracotta
-					light: '#E9967A', // dark salmon
+					DEFAULT: '#D97757',
+					light: '#E58A6A',
+					dark: '#B85C3E',
 				},
 				background: {
-					light: '#fcfcf9', // warm off-white
-					dark: '#121212', // dark navy
+					light: '#FAF9F5',
+					dark: '#171614',
 				},
 			},
 			fontFamily: {
+				display: ['Georgia', 'Cambria', '"Times New Roman"', 'serif'],
 				sans: [
 					'"FK Grotesk"',
 					'ui-sans-serif',
@@ -49,9 +46,6 @@ module.exports = {
 					'"Courier New"',
 					'monospace',
 				],
-			},
-			animation: {
-				'gradient-slow': 'gradient 8s ease infinite alternate',
 			},
 		},
 	},

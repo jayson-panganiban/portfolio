@@ -14,7 +14,10 @@ export function ThemeToggle() {
 
 	if (!mounted) {
 		return (
-			<div className='h-10 w-10 rounded-full bg-gray-200 dark:bg-gray-800' aria-hidden='true' />
+			<div
+				className='h-9 w-9 border border-black/10 bg-stone-100 dark:border-white/10 dark:bg-stone-900'
+				aria-hidden='true'
+			/>
 		)
 	}
 
@@ -22,10 +25,10 @@ export function ThemeToggle() {
 		<button
 			type='button'
 			onClick={toggleTheme}
-			className='rounded-full p-2.5 transition-colors hover:bg-gray-200 dark:hover:bg-gray-800'
+			className='inline-flex h-9 w-9 shrink-0 items-center justify-center text-[#87867F] transition-colors hover:text-[#141413] dark:text-stone-400 dark:hover:text-primary-light'
 			aria-label='Toggle theme'
 		>
-			{theme === 'light' ? <MoonIcon size={24} /> : <SunIcon size={24} />}
+			{theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
 		</button>
 	)
 }

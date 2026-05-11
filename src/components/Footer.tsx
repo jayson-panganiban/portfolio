@@ -1,21 +1,15 @@
-'use client'
-
-import { usePathname } from 'next/navigation'
 import { resume } from '@/data/resume'
-import { SocialLinks } from './SocialLinks'
 
 export function Footer() {
 	const currentYear = new Date().getFullYear()
-	const pathname = usePathname()
-	const isHomePage = pathname === '/'
 
 	return (
-		<footer className='mt-10 border-t border-gray-200 py-5 dark:border-gray-800'>
-			<div className='container mx-auto flex max-w-4xl flex-col items-center gap-3 px-2'>
-				{!isHomePage && <SocialLinks size={24} weight='thin' />}
-				<p className='text-sm text-gray-700 dark:text-gray-300'>
+		<footer className='border-t-[1.5px] border-[#D1CFC5] py-10 dark:border-white/10'>
+			<div className='mx-auto flex max-w-6xl flex-col gap-2 px-5 text-sm text-[#87867F] dark:text-stone-500 sm:px-8 md:flex-row md:items-baseline md:justify-between'>
+				<p>
 					{resume.name} © {currentYear}
 				</p>
+				<p>Based in {resume.location}, available for remote-friendly opportunities.</p>
 			</div>
 		</footer>
 	)
