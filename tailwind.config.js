@@ -10,14 +10,26 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#D97757',
-					light: '#E58A6A',
-					dark: '#B85C3E',
+					DEFAULT: 'rgb(var(--color-primary-rgb) / <alpha-value>)',
+					light: 'rgb(var(--color-primary-light-rgb) / <alpha-value>)',
+					dark: 'rgb(var(--color-primary-dark-rgb) / <alpha-value>)',
 				},
 				background: {
-					light: '#FAF9F5',
-					dark: '#171614',
+					light: 'rgb(var(--color-background-rgb) / <alpha-value>)',
+					dark: 'rgb(var(--color-background-rgb) / <alpha-value>)',
 				},
+				foreground: 'rgb(var(--color-foreground-rgb) / <alpha-value>)',
+				heading: 'rgb(var(--color-heading-rgb) / <alpha-value>)',
+				body: 'rgb(var(--color-body-rgb) / <alpha-value>)',
+				muted: 'rgb(var(--color-muted-rgb) / <alpha-value>)',
+				surface: 'rgb(var(--color-surface-rgb) / <alpha-value>)',
+				'surface-muted': 'rgb(var(--color-surface-muted-rgb) / <alpha-value>)',
+				border: 'rgb(var(--color-border-rgb) / <alpha-value>)',
+				'border-subtle': 'rgb(var(--color-border-subtle-rgb) / <alpha-value>)',
+			},
+			borderRadius: {
+				card: 'var(--radius-card)',
+				control: 'var(--radius-control)',
 			},
 			fontFamily: {
 				display: ['Georgia', 'Cambria', '"Times New Roman"', 'serif'],

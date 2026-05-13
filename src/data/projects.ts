@@ -12,7 +12,7 @@ export const projectsData: Project[] = [
 		id: 'halfprice-grocery',
 		title: 'Halfprice Grocery',
 		summary:
-			'A full-stack grocery deals platform that helps shoppers find half-price specials from Coles and Woolworths faster.',
+			'A full-stack grocery deals platform that helps shoppers find half-price specials from Coles and Woolworths in Australia.',
 		stack: 'React · Node.js · Express.js · MongoDB · Playwright · Jest',
 		outcome:
 			'Turns weekly specials into a cleaner, faster product experience with search, filters, and saved deals.',
