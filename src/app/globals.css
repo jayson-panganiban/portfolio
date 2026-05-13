@@ -30,6 +30,7 @@
 		--color-primary-dark: #b85c3e;
 		--color-primary-dark-rgb: 184 92 62;
 		--shadow-card-hover: 0 10px 30px rgb(20 20 19 / 0.08);
+		--header-height: 4rem;
 		--radius-card: 14px;
 		--radius-control: 10px;
 		color-scheme: light;

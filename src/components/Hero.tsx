@@ -4,7 +4,7 @@ export function Hero() {
 	return (
 		<section
 			id='top'
-			className='flex items-start border-b-[1.5px] border-border pt-14 pb-10 sm:min-h-[calc(100svh-4rem)] sm:items-end sm:pt-16 sm:pb-20 md:py-24'
+			className='flex scroll-mt-[var(--header-height)] items-start border-b-[1.5px] border-border pt-14 pb-10 sm:min-h-[calc(100svh_-_var(--header-height))] sm:items-end sm:pt-16 sm:pb-20 md:py-24'
 		>
 			<div className='w-full'>
 				<p className='mb-5 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.12em] text-muted before:h-[1.5px] before:w-6 before:bg-primary'>
