@@ -8,7 +8,7 @@ export function Hero() {
 		>
 			<div className='w-full'>
 				<p className='mb-5 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.12em] text-muted before:h-[1.5px] before:w-6 before:bg-primary'>
-					AUTOMATION · PERFORMANCE · DEVELOPMENT
+					{resume.title}
 				</p>
 
 				<h1 className='max-w-[13ch] font-display text-[clamp(3.4rem,10vw,8rem)] leading-[0.95] tracking-[-0.02em] text-heading'>
@@ -17,30 +17,21 @@ export function Hero() {
 
 				<div className='mt-5 grid gap-5 md:grid-cols-[minmax(0,620px)_auto] md:items-end md:justify-between'>
 					<p className='max-w-[34ch] text-[16.5px] leading-7 text-copy sm:text-lg'>
-						{resume.title}
+						{resume.summary}
 					</p>
 
 					<div className='flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5'>
-						<a
-							href='#projects'
-							className='primary-button'
-						>
+						<a href='#projects' className='primary-button'>
 							View projects
 						</a>
 
-						<a
-							href={resume.resumeLink}
-							download
-							className='text-link h-10 justify-center'
-						>
+						<a href={resume.resumeLink} download className='text-link h-10 justify-center'>
 							Download résumé
 						</a>
 					</div>
 				</div>
 
-				<p className='mt-7 font-mono text-xs text-muted md:mt-10'>
-					{resume.location}
-				</p>
+				<p className='mt-7 font-mono text-xs text-muted md:mt-10'>{resume.location}</p>
 			</div>
 		</section>
 	)

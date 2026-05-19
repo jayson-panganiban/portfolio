@@ -35,7 +35,6 @@
 		--radius-control: 10px;
 		color-scheme: light;
 	}
-
 	.dark {
 		--color-background: #171614;
 		--color-background-rgb: 23 22 20;
@@ -47,11 +46,12 @@
 		--color-body-rgb: 214 211 209;
 		--color-muted: #78716c;
 		--color-muted-rgb: 120 113 108;
-		--color-surface: #1c1917;
-		--color-surface-rgb: 28 25 23;
-		--color-surface-muted: #0c0a09;
-		--color-surface-muted-rgb: 12 10 9;
-		--color-surface-muted-hover: #292524;
+
+		--color-surface-muted: #1a1816;
+		--color-surface-muted-rgb: 26 24 22;
+		--color-surface: #211f1d;
+		--color-surface-rgb: 33 31 29;
+		--color-surface-muted-hover: #24211f;
 		--color-border: rgb(255 255 255 / 0.1);
 		--color-border-rgb: 46 45 44;
 		--color-border-subtle: rgb(255 255 255 / 0.1);
@@ -155,10 +155,6 @@
 
 	.panel-band {
 		@apply border-border-subtle bg-surface-muted transition-colors;
-	}
-
-	.group:hover .panel-band {
-		background-color: var(--color-surface-muted-hover);
 	}
 
 	.text-link {

@@ -19,6 +19,7 @@ export type SocialLink = {
 export type ResumeData = {
 	name: string
 	title: string
+	summary: string
 	location: string
 	email: string
 	workInfo: string
@@ -32,13 +33,14 @@ export type ResumeData = {
 
 export const resume: ResumeData = {
 	name: 'Jayson Panganiban',
-	title: 'Building reliable tests, tools, and web products.',
+	title: 'AUTOMATION · PERFORMANCE · DEVELOPMENT',
+	summary: 'Building reliable tests, tools, and web products.',
 	location: 'Melbourne, Australia',
 	email: 'jsoncp@proton.me',
 	workInfo:
-		'A quality-focused engineer building automation frameworks, performance test suites, and practical web tools for complex delivery environments.',
+		'I work across automation, quality, and performance engineering, with experience building software and tools that support reliable systems.',
 	personalInfo:
-		"Outside work, interests include running, cycling, and building practical tools that I promise I'll finish someday.",
+		'Outside of work, I’m a dad of two who enjoys running, cycling, hiking, and picking guitar when time allows. I’m also building side projects-usually with more ideas than time, but always intending to finish them.',
 	capabilities: [
 		{
 			category: 'Languages',
