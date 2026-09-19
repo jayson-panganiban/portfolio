@@ -1,0 +1,9 @@
+{
+	"version": 1.1,
+	"atDirectives": [
+		{
+			"name": "@stylex",
+			"description": "StyleX PostCSS directive that emits generated atomic CSS."
+		}
+	]
+}

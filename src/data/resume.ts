@@ -36,7 +36,7 @@ export const resume: ResumeData = {
 	title: 'AUTOMATION · PERFORMANCE · DEVELOPMENT',
 	summary: 'Building reliable tests, tools, and web products.',
 	location: 'Melbourne, Australia',
-	email: 'jsoncp@proton.me',
+	email: 'json.panganiban@gmail.com',
 	workInfo:
 		'I work across automation, quality, and performance engineering, with experience building software and tools that support reliable systems.',
 	personalInfo:
@@ -59,8 +59,8 @@ export const resume: ResumeData = {
 			tools: ['k6', 'JMeter', 'Locust', 'load testing', 'bottleneck analysis'],
 		},
 		{
-			category: 'Application Development',
-			tools: ['React', 'Next.js', 'Express.js', 'FastAPI', 'Tailwind CSS'],
+			category: 'Development',
+			tools: ['React', 'Next.js', 'Express.js', 'FastAPI', 'Tailwind CSS', 'SmartCOMM'],
 		},
 		{
 			category: 'Delivery & Infrastructure',
@@ -70,19 +70,19 @@ export const resume: ResumeData = {
 
 	workHistory: [
 		{
-			title: 'Principal Consultant - SmartCOMM Developer',
+			title: 'Principal Consultant',
 			company: 'Tenzing',
 			period: '2025 - Present',
 			location: 'Melbourne, Australia',
 			description: [
 				'Developed SmartCOMM CCM templates, document rules, and reusable components for insurance policy, claims, billing, and compliance communications.',
 				'Integrated SmartCOMM with core insurance systems using XML/JSON payloads, APIs, and document generation services for on-demand and batch processing.',
-				'Delivered high-volume omnichannel communications across PDF, print, email, and digital channels with dynamic content, personalization, and compliance controls.',
+				'Delivered high-volume omnichannel communications across PDF, print, SMS, fax, responsive email, and digital channels with dynamic content, personalization, and compliance controls.',
 				'Supported configuration, data mapping, testing, deployment, and incident resolution to ensure scalable, accurate, and standardized customer communication workflows.',
 			],
 		},
 		{
-			title: 'Senior Consultant - Automation Engineer',
+			title: 'Senior Consultant',
 			company: 'Datacom',
 			period: '2022 - 2025',
 			location: 'Melbourne, Australia',
@@ -90,6 +90,7 @@ export const resume: ResumeData = {
 				'Built and maintained scalable automation frameworks for complex insurance platforms across policy, claims, and underwriting workflows.',
 				'Delivered multi-channel validation across PDF, email, SMS, and related communication outputs aligned to business and regulatory rules.',
 				'Integrated automation into delivery workflows to improve release confidence, earlier defect detection, and maintainable quality practices.',
+				'Developed SmartCOMM templates, document rules, and reusable components for insurance communications.',
 			],
 		},
 		{
@@ -136,6 +137,17 @@ export const resume: ResumeData = {
 				'Led a team of testers responsible for testing and quality assurance of financial software products. Collaborated with cross-functional teams to ensure product quality and meet client requirements.',
 				'Developed and executed test plans, test cases, and test scripts to validate software functionality, performance, and security.',
 				'Provided training and mentorship to junior testers, fostering a culture of continuous learning and improvement within the team.',
+			],
+		},
+		{
+			title: 'Software Engineer',
+			company: 'Accenture',
+			location: 'Makati, Philippines',
+			period: '2010 - 2011',
+			description: [
+				'Developed and maintained software applications, ensuring high performance, scalability, and reliability.',
+				'Collaborated with cross-functional teams to gather requirements, design solutions, and implement features.',
+				'Participated in code reviews, debugging, and troubleshooting to deliver high-quality software products.',
 			],
 		},
 	],

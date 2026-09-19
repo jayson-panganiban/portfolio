@@ -1,61 +1,71 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer resets {
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
 
+	ul,
+	ol {
+		list-style: none;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	button {
+		background: none;
+		border: none;
+		font: inherit;
+		color: inherit;
+		cursor: pointer;
+	}
+}
 @layer base {
 	:root {
-		--color-background: #faf9f5;
-		--color-background-rgb: 250 249 245;
-		--color-foreground: #141413;
-		--color-foreground-rgb: 20 20 19;
-		--color-heading: #141413;
-		--color-heading-rgb: 20 20 19;
-		--color-body: #3d3d3a;
-		--color-body-rgb: 61 61 58;
-		--color-muted: #87867f;
-		--color-muted-rgb: 135 134 127;
-		--color-surface: #ffffff;
-		--color-surface-rgb: 255 255 255;
-		--color-surface-muted: #f0eee6;
-		--color-surface-muted-rgb: 240 238 230;
-		--color-surface-muted-hover: #e3dacc;
-		--color-border: #d1cfc5;
-		--color-border-rgb: 209 207 197;
-		--color-border-subtle: #e6e3da;
-		--color-border-subtle-rgb: 230 227 218;
-		--color-primary: #d97757;
-		--color-primary-rgb: 217 119 87;
-		--color-primary-light: #e58a6a;
-		--color-primary-light-rgb: 229 138 106;
-		--color-primary-dark: #b85c3e;
-		--color-primary-dark-rgb: 184 92 62;
-		--shadow-card-hover: 0 10px 30px rgb(20 20 19 / 0.08);
+		--color-background: #f4efe5;
+		--color-background-rgb: 244 239 229;
+		--color-foreground: #242722;
+		--color-heading: #151914;
+		--color-body: #464b43;
+		--color-muted: #7d8177;
+		--color-surface: #fcfaf4;
+		--color-surface-muted: #e9e2d5;
+		--color-border: #c7bfae;
+		--color-border-subtle: #ded7c9;
+		--color-primary: #a9513d;
+		--color-primary-rgb: 169 81 61;
+		--color-primary-light: #d9856d;
+		--color-primary-light-rgb: 217 133 109;
+		--color-hover-accent: var(--color-heading);
+		--color-panel-hover-border: var(--color-heading);
+		--color-link-accent: var(--color-primary);
+		--color-button-border: var(--color-primary);
+		--shadow-card-hover: 0 8px 24px rgb(36 39 34 / 0.09);
 		--header-height: 4rem;
 		--radius-card: 14px;
 		--radius-control: 10px;
 		color-scheme: light;
 	}
-	.dark {
-		--color-background: #171614;
-		--color-background-rgb: 23 22 20;
-		--color-foreground: #f5f5f4;
-		--color-foreground-rgb: 245 245 244;
-		--color-heading: #f5f5f4;
-		--color-heading-rgb: 245 245 244;
-		--color-body: #d6d3d1;
-		--color-body-rgb: 214 211 209;
-		--color-muted: #78716c;
-		--color-muted-rgb: 120 113 108;
 
-		--color-surface-muted: #1a1816;
-		--color-surface-muted-rgb: 26 24 22;
-		--color-surface: #211f1d;
-		--color-surface-rgb: 33 31 29;
-		--color-surface-muted-hover: #24211f;
-		--color-border: rgb(255 255 255 / 0.1);
-		--color-border-rgb: 46 45 44;
+	.dark {
+		--color-background: #000000;
+		--color-background-rgb: 0 0 0;
+		--color-foreground: #eee9df;
+		--color-heading: #f8f3e8;
+		--color-body: #d8d2c7;
+		--color-muted: #a7a094;
+		--color-surface: #111311;
+		--color-surface-muted: #090a09;
+		--color-border: rgb(255 255 255 / 0.16);
 		--color-border-subtle: rgb(255 255 255 / 0.1);
-		--color-border-subtle-rgb: 46 45 44;
+		--color-hover-accent: var(--color-primary-light);
+		--color-panel-hover-border: rgb(var(--color-primary-light-rgb) / 0.4);
+		--color-link-accent: var(--color-primary-light);
+		--color-button-border: var(--color-primary-light);
+		--shadow-card-hover: 0 10px 28px rgb(0 0 0 / 0.42);
 		color-scheme: dark;
 	}
 
@@ -82,6 +92,8 @@
 	body {
 		min-height: 100%;
 		background-color: var(--color-background);
+		background-image: radial-gradient(rgb(36 39 34 / 0.035) 0.5px, transparent 0.5px);
+		background-size: 6px 6px;
 		color: var(--color-foreground);
 		font-weight: 400;
 		letter-spacing: 0;
@@ -99,7 +111,7 @@
 	h5,
 	h6 {
 		font-weight: 500;
-		letter-spacing: 0;
+		letter-spacing: -0.012em;
 	}
 
 	::selection {
@@ -108,60 +120,4 @@
 	}
 }
 
-@layer components {
-	.page-container {
-		@apply mx-auto max-w-6xl px-5 sm:px-8;
-	}
-
-	.focus-ring {
-		@apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-background-light dark:focus-visible:ring-offset-background-dark;
-	}
-
-	.text-heading {
-		color: var(--color-heading);
-	}
-
-	.text-copy {
-		color: var(--color-body);
-	}
-
-	.text-muted {
-		color: var(--color-muted);
-	}
-
-	.eyebrow {
-		@apply font-mono text-[11px] uppercase leading-4 tracking-[0.08em] text-muted;
-	}
-
-	.copy {
-		@apply text-[15px] leading-7 text-copy;
-	}
-
-	.copy-sm {
-		@apply text-[13px] leading-6 text-copy;
-	}
-
-	.panel {
-		@apply rounded-card border-[1.5px] border-border bg-surface;
-	}
-
-	.interactive-panel {
-		@apply panel transition duration-150 hover:-translate-y-0.5 hover:border-heading dark:hover:border-primary-light/40;
-	}
-
-	.interactive-panel:hover {
-		box-shadow: var(--shadow-card-hover);
-	}
-
-	.panel-band {
-		@apply border-border-subtle bg-surface-muted transition-colors;
-	}
-
-	.text-link {
-		@apply focus-ring inline-flex items-center text-sm text-copy underline decoration-border underline-offset-[6px] transition-colors hover:text-heading hover:decoration-heading dark:hover:text-primary-light dark:hover:decoration-primary-light;
-	}
-
-	.primary-button {
-		@apply focus-ring inline-flex h-10 items-center justify-center rounded-control border-[1.5px] border-primary bg-surface px-4 text-sm text-primary transition-colors hover:border-heading hover:bg-surface-muted hover:text-heading dark:border-primary-light dark:hover:border-primary-light dark:hover:text-primary-light;
-	}
-}
+@stylex;

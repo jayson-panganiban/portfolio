@@ -5,8 +5,8 @@ import { createContext, useContext, useEffect, useState } from 'react'
 type Theme = 'light' | 'dark'
 
 const themeColors: Record<Theme, string> = {
-	light: '#FAF9F5',
-	dark: '#171614',
+	light: '#f5f0e6',
+	dark: '#1b1915',
 }
 
 interface ThemeContextType {

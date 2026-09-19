@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	reactStrictMode: true,
-	output: 'export', // Static site export
+	output: 'export',
 	images: {
 		unoptimized: true,
 	},
 	trailingSlash: true,
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

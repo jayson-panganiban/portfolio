@@ -1,9 +1,16 @@
+import * as stylex from '@stylexjs/stylex'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
+const styles = stylex.create({
+	page: {
+		minHeight: '100vh',
+	},
+})
+
 export function PageLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<div className='min-h-screen bg-background-light text-foreground transition-colors duration-300'>
+		<div {...stylex.props(styles.page)}>
 			<Header />
 			{children}
 			<Footer />
