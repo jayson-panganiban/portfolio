@@ -25,6 +25,7 @@ const styles = stylex.create({
 	headingRow: {
 		marginBottom: 28,
 		display: 'flex',
+		flexWrap: 'wrap',
 		alignItems: 'baseline',
 		gap: 12,
 	},
@@ -45,6 +46,7 @@ const styles = stylex.create({
 		color: tokens.heading,
 	},
 	headingIntro: {
+		flexBasis: { default: '100%', [sm]: 'auto' },
 		marginTop: 12,
 		marginLeft: { default: 0, [sm]: 48 },
 		maxWidth: 680,

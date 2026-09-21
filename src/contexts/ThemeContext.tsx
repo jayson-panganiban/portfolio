@@ -4,9 +4,10 @@ import { createContext, useContext, useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
 
+// Keep in sync with --color-background in globals.css
 const themeColors: Record<Theme, string> = {
-	light: '#f5f0e6',
-	dark: '#1b1915',
+	light: '#f4efe5',
+	dark: '#000000',
 }
 
 interface ThemeContextType {

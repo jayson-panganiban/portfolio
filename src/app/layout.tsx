@@ -5,7 +5,7 @@ import { tokens } from '@/styles/tokens.stylex'
 import './globals.css'
 
 export const metadata: Metadata = {
-	title: 'Jayson Panganiban | Portfolio',
+	title: 'Jayson Panganiban',
 	description: 'Automation, QA, and development portfolio for Jayson Panganiban.',
 }
 
@@ -13,8 +13,8 @@ export const viewport: Viewport = {
 	colorScheme: 'light dark',
 	viewportFit: 'cover',
 	themeColor: [
-		{ media: '(prefers-color-scheme: light)', color: '#FAF9F5' },
-		{ media: '(prefers-color-scheme: dark)', color: '#171614' },
+		{ media: '(prefers-color-scheme: light)', color: '#f4efe5' },
+		{ media: '(prefers-color-scheme: dark)', color: '#000000' },
 	],
 }
 
