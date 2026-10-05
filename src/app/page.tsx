@@ -13,17 +13,17 @@ const lg = '@media (min-width: 1024px)'
 
 const styles = stylex.create({
 	main: {
-		paddingBottom: 96,
+		paddingBottom: 120,
 	},
 	section: {
 		marginTop: {
-			default: 64,
-			[md]: 80,
+			default: 80,
+			[md]: 104,
 		},
 		scrollMarginTop: 96,
 	},
 	headingRow: {
-		marginBottom: 28,
+		marginBottom: 32,
 		display: 'flex',
 		flexWrap: 'wrap',
 		alignItems: 'baseline',
@@ -40,9 +40,13 @@ const styles = stylex.create({
 	},
 	headingTitle: {
 		fontFamily: tokens.fontDisplay,
-		fontSize: 25,
+		display: 'flex',
+		flex: 1,
+		alignItems: 'center',
+		gap: 24,
+		fontSize: 24,
 		lineHeight: 1.2,
-		letterSpacing: '-0.01em',
+		letterSpacing: '-0.035em',
 		color: tokens.heading,
 	},
 	headingIntro: {
@@ -50,8 +54,8 @@ const styles = stylex.create({
 		marginTop: 12,
 		marginLeft: { default: 0, [sm]: 48 },
 		maxWidth: 680,
-		fontSize: 14.5,
-		lineHeight: '1.5rem',
+		fontSize: 15,
+		lineHeight: { default: '1.65rem', [sm]: '1.8rem' },
 		color: tokens.body,
 	},
 	aboutCopy: {
@@ -62,10 +66,11 @@ const styles = stylex.create({
 		marginTop: 16,
 	},
 	capabilitiesGrid: {
-		marginTop: 32,
+		marginTop: 40,
 		marginLeft: { default: 0, [sm]: 48 },
 		display: 'grid',
-		gap: 16,
+		columnGap: 24,
+		rowGap: 28,
 		gridTemplateColumns: {
 			default: '1fr',
 			[sm]: 'repeat(2, minmax(0, 1fr))',
@@ -73,12 +78,14 @@ const styles = stylex.create({
 		},
 	},
 	capabilityCard: {
-		padding: 20,
-		backgroundColor: tokens.surfaceMuted,
+		borderTopWidth: 1,
+		borderTopStyle: 'solid',
+		borderTopColor: tokens.border,
+		paddingTop: 16,
 	},
 	capabilityTitle: {
 		fontFamily: tokens.fontDisplay,
-		fontSize: 18,
+		fontSize: 16,
 		lineHeight: 1.2,
 		color: tokens.heading,
 	},
@@ -89,94 +96,96 @@ const styles = stylex.create({
 		marginLeft: { default: 0, [sm]: 48 },
 		display: 'flex',
 		flexDirection: 'column',
-		gap: 20,
+		gap: 0,
 	},
 	roleCard: {
-		overflow: 'hidden',
+		borderTopWidth: 1,
+		borderTopStyle: 'solid',
+		borderTopColor: tokens.border,
 		display: { default: 'flex', [md]: 'grid' },
 		flexDirection: { default: 'column', [md]: 'row' },
 		gridTemplateColumns: { default: 'none', [md]: '190px minmax(0, 1fr)' },
 	},
 	roleBand: {
 		display: 'flex',
-		minHeight: { default: 128, [md]: 176 },
 		flexDirection: 'column',
-		justifyContent: 'space-between',
-		borderBottomWidth: { default: 1.5, [md]: 0 },
-		borderBottomStyle: 'solid',
-		borderRightWidth: { default: 0, [md]: 1.5 },
-		borderRightStyle: 'solid',
-		borderRightColor: tokens.borderSubtle,
-		padding: 20,
+		alignItems: 'flex-start',
+		gap: 8,
+		paddingBlock: { default: 18, [md]: 24 },
+		paddingRight: { default: 0, [md]: 24 },
 	},
 	roleMeta: {
-		marginBottom: 16,
 		display: 'flex',
-		flexDirection: 'column',
-		gap: 8,
+		flexDirection: { default: 'row', [md]: 'column' },
+		flexWrap: 'wrap',
+		columnGap: 12,
+		rowGap: 4,
 	},
 	roleMetaPeriod: {
-		marginTop: { default: 0, [md]: 12 },
+		marginTop: 0,
 	},
 	roleCompany: {
 		fontFamily: tokens.fontDisplay,
-		fontSize: '2rem',
-		lineHeight: 0.98,
-		letterSpacing: '-0.01em',
+		fontSize: 22,
+		lineHeight: 1.15,
+		letterSpacing: '-0.045em',
 		color: tokens.heading,
-		marginBottom: { default: 0, [md]: 12 },
+		marginBottom: 0,
 	},
 	roleBody: {
 		display: 'flex',
 		flexDirection: 'column',
-		padding: { default: 20, [sm]: 28 },
+		paddingTop: { default: 0, [md]: 24 },
+		paddingBottom: 24,
 	},
 	roleTitle: {
-		fontSize: 14,
-		lineHeight: '1.5rem',
+		fontSize: 16,
+		lineHeight: { default: '1.4rem', [md]: '1.5rem' },
 		color: tokens.body,
 	},
 	roleDescription: {
-		marginTop: 20,
+		marginTop: 12,
 		flex: 1,
 		display: 'flex',
 		flexDirection: 'column',
 		gap: 12,
 	},
 	roleDescriptionItem: {
-		borderLeftWidth: 1.5,
+		borderLeftWidth: 1,
 		borderLeftStyle: 'solid',
-		borderLeftColor: `rgb(${tokens.primaryRgb} / 0.5)`,
-		paddingLeft: 16,
+		borderLeftColor: tokens.noteRule,
+		paddingLeft: 14,
 	},
 	projectList: {
 		marginLeft: { default: 0, [sm]: 48 },
 		display: 'flex',
 		flexDirection: 'column',
-		gap: 20,
+		gap: { default: 16, [md]: 24 },
 	},
 	projectGrid: {
-		display: 'grid',
-		gap: 20,
-		gridTemplateColumns: { default: 'none', [md]: 'repeat(3, minmax(0, 1fr))' },
+		display: 'flex',
+		flexDirection: 'column',
 	},
 	contactPanel: {
 		marginLeft: { default: 0, [sm]: 48 },
 		maxWidth: '48rem',
-		padding: { default: 24, [sm]: 28 },
+		borderTopWidth: 1,
+		borderTopStyle: 'solid',
+		borderTopColor: tokens.border,
+		paddingTop: 24,
 	},
 	contactHeading: {
 		fontFamily: tokens.fontDisplay,
 		fontSize: {
-			default: 36,
-			[sm]: 48,
+			default: 28,
+			[sm]: 40,
 		},
-		lineHeight: 1.2,
-		letterSpacing: '-0.02em',
+		lineHeight: 1.15,
+		letterSpacing: '-0.035em',
 		color: tokens.heading,
 	},
 	contactEmphasis: {
-		fontStyle: 'italic',
+		fontStyle: 'normal',
 		color: tokens.primary,
 	},
 	contactCopy: {
@@ -211,7 +220,7 @@ export default function Home() {
 				<Hero />
 
 				<section id='about' {...stylex.props(styles.section)}>
-					<SectionHeading index='01' title='About' />
+					<SectionHeading index='01 /' title='About' />
 
 					<div {...stylex.props(styles.aboutCopy)}>
 						<p {...stylex.props(shared.copy)}>{resume.workInfo}</p>
@@ -220,7 +229,7 @@ export default function Home() {
 
 					<div {...stylex.props(styles.capabilitiesGrid)}>
 						{resume.capabilities.map(item => (
-							<div key={item.category} {...stylex.props(shared.panel, styles.capabilityCard)}>
+							<div key={item.category} {...stylex.props(styles.capabilityCard)}>
 								<h3 {...stylex.props(styles.capabilityTitle)}>{item.category}</h3>
 								<p {...stylex.props(shared.copySm, styles.capabilityTools)}>
 									{item.tools.join(', ')}
@@ -232,23 +241,19 @@ export default function Home() {
 
 				<section id='experience' {...stylex.props(styles.section)}>
 					<SectionHeading
-						index='02'
+						index='02 /'
 						title='Experience'
 						intro='Building automation frameworks, validating complex systems, and improving release confidence across real-world delivery environments.'
 					/>
 
 					<div {...stylex.props(styles.roleList)}>
 						{resume.workHistory.map(role => (
-							<article
-								key={role.company}
-								{...stylex.props(shared.panel, shared.interactivePanel, styles.roleCard)}
-							>
-								<div {...stylex.props(shared.panelBand, styles.roleBand)}>
+							<article key={role.company} {...stylex.props(styles.roleCard)}>
+								<div {...stylex.props(styles.roleBand)}>
 									<div {...stylex.props(styles.roleMeta)}>
 										<p {...stylex.props(shared.eyebrow, styles.roleMetaPeriod)}>{role.period}</p>
 										{role.location && <p {...stylex.props(shared.eyebrow)}>{role.location}</p>}
 									</div>
-
 									<h3 {...stylex.props(styles.roleCompany)}>{role.company}</h3>
 								</div>
 
@@ -270,7 +275,7 @@ export default function Home() {
 
 				<section id='projects' {...stylex.props(styles.section)}>
 					<SectionHeading
-						index='03'
+						index='03 /'
 						title='Projects'
 						intro='Personal products and tools built outside work to solve practical problems and explore useful ideas through code.'
 					/>
@@ -286,9 +291,9 @@ export default function Home() {
 				</section>
 
 				<section id='contact' {...stylex.props(styles.section)}>
-					<SectionHeading index='04' title='Contact' />
+					<SectionHeading index='04 /' title='Contact' />
 
-					<div {...stylex.props(shared.panel, styles.contactPanel)}>
+					<div {...stylex.props(styles.contactPanel)}>
 						<h3 {...stylex.props(styles.contactHeading)}>
 							Let&apos;s build <em {...stylex.props(styles.contactEmphasis)}>something useful.</em>
 						</h3>

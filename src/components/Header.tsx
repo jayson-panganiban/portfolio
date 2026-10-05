@@ -3,7 +3,7 @@ import { shared } from '@/styles/shared'
 import { tokens } from '@/styles/tokens.stylex'
 import { ThemeToggle } from './ThemeToggle'
 
-const md = '@media (min-width: 768px)'
+const sm = '@media (min-width: 640px)'
 
 const navItems = [
 	{ label: 'About', href: '#about' },
@@ -17,45 +17,65 @@ const styles = stylex.create({
 		position: 'sticky',
 		top: 0,
 		zIndex: 50,
-		borderBottomWidth: 1.5,
+		borderBottomWidth: 1,
 		borderBottomStyle: 'solid',
 		borderBottomColor: tokens.border,
-		backgroundColor: `rgb(${tokens.backgroundRgb} / 0.9)`,
+		backgroundColor: `rgb(${tokens.backgroundRgb} / 0.96)`,
 		backdropFilter: 'blur(12px)',
 	},
 	inner: {
-		display: 'flex',
+		display: 'grid',
+		gridTemplateColumns: { default: 'minmax(0, 1fr) auto', [sm]: 'auto minmax(0, 1fr) auto' },
 		minHeight: tokens.headerHeight,
 		alignItems: 'center',
-		justifyContent: 'space-between',
-		gap: 16,
-		paddingBlock: 12,
+		columnGap: 16,
+		rowGap: { default: 4, [sm]: 0 },
+		paddingBlock: { default: 8, [sm]: 12 },
 	},
 	logo: {
+		display: 'inline-flex',
+		alignItems: 'center',
 		flexShrink: 0,
 		fontFamily: tokens.fontDisplay,
-		fontSize: 24,
-		fontStyle: 'italic',
+		fontSize: 18,
+		fontWeight: 600,
+		letterSpacing: '-0.05em',
 		color: tokens.heading,
 		transitionProperty: 'color',
 		':hover': { color: tokens.primary },
 	},
 	nav: {
-		display: {
-			default: 'none',
-			[md]: 'flex',
-		},
+		display: 'flex',
 		alignItems: 'center',
-		gap: 20,
+		gap: { default: 20, [sm]: 24 },
+		gridColumn: { default: '1 / -1', [sm]: '2' },
+		gridRow: { default: '2', [sm]: '1' },
+		justifySelf: { default: 'start', [sm]: 'end' },
+		minWidth: 0,
+		width: { default: '100%', [sm]: 'auto' },
+		overflowX: { default: 'auto', [sm]: 'visible' },
+		scrollbarWidth: 'none',
 	},
 	navLink: {
-		transitionProperty: 'color',
-		':hover': { color: tokens.hoverAccent },
+		flexShrink: 0,
+		paddingBlock: 6,
+		fontSize: { default: 10, [sm]: 11 },
+		letterSpacing: '0.08em',
+		textDecorationLine: 'underline',
+		textDecorationColor: 'transparent',
+		textUnderlineOffset: 6,
+		transitionProperty: 'color, text-decoration-color',
+		':hover': {
+			color: tokens.linkAccent,
+			textDecorationColor: tokens.linkAccent,
+		},
 	},
 	actions: {
 		display: 'flex',
 		alignItems: 'center',
-		gap: 16,
+		gridColumn: { default: '2', [sm]: '3' },
+		gridRow: '1',
+		justifySelf: 'end',
 	},
 })
 
@@ -70,18 +90,18 @@ export function Header() {
 				>
 					JP
 				</a>
+				<nav {...stylex.props(styles.nav)} aria-label='Primary navigation'>
+					{navItems.map(item => (
+						<a
+							key={item.href}
+							href={item.href}
+							{...stylex.props(shared.focusRing, shared.eyebrow, styles.navLink)}
+						>
+							{item.label}
+						</a>
+					))}
+				</nav>
 				<div {...stylex.props(styles.actions)}>
-					<nav {...stylex.props(styles.nav)} aria-label='Primary navigation'>
-						{navItems.map(item => (
-							<a
-								key={item.href}
-								href={item.href}
-								{...stylex.props(shared.focusRing, shared.eyebrow, styles.navLink)}
-							>
-								{item.label}
-							</a>
-						))}
-					</nav>
 					<ThemeToggle />
 				</div>
 			</div>

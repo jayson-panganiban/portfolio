@@ -29,12 +29,12 @@ export const shared = stylex.create({
 	},
 	copy: {
 		fontSize: 15,
-		lineHeight: '1.75rem',
+		lineHeight: { default: '1.65rem', [sm]: '1.8rem' },
 		color: tokens.body,
 	},
 	copySm: {
-		fontSize: 13,
-		lineHeight: '1.5rem',
+		fontSize: 14,
+		lineHeight: { default: '1.55rem', [sm]: '1.75rem' },
 		color: tokens.body,
 	},
 	panel: {
@@ -43,15 +43,6 @@ export const shared = stylex.create({
 		borderStyle: 'solid',
 		borderColor: tokens.border,
 		backgroundColor: tokens.surface,
-	},
-	interactivePanel: {
-		transitionProperty: 'transform, border-color, box-shadow',
-		transitionDuration: '150ms',
-		':hover': {
-			transform: 'translateY(-1px)',
-			borderColor: tokens.panelHoverBorder,
-			boxShadow: tokens.shadowCardHover,
-		},
 	},
 	panelBand: {
 		borderColor: tokens.borderSubtle,

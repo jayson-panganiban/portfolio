@@ -38,33 +38,39 @@ export const resume: ResumeData = {
 	location: 'Melbourne, Australia',
 	email: 'json.panganiban@gmail.com',
 	workInfo:
-		'I work across automation, quality, and performance engineering, with experience building software and tools that support reliable systems.',
+		'I work across automation, quality, and performance engineering, with experience building software and tools that keep systems reliable.',
+
 	personalInfo:
-		'Outside of work, I’m a dad of two who enjoys running, cycling, hiking, and picking guitar when time allows. I’m also building side projects-usually with more ideas than time, but always intending to finish them.',
+		'Outside of work I’m a dad of two who runs, cycles, and hikes to stay sane. I also play guitar and start far more side projects than I finish though I swear this next one will be different.',
+
 	capabilities: [
 		{
 			category: 'Languages',
 			tools: ['Python', 'TypeScript', 'JavaScript', 'Ruby'],
 		},
 		{
-			category: 'Automation',
+			category: 'Test Automation',
 			tools: ['Playwright', 'Cypress', 'Selenium', 'Robot Framework', 'Cucumber', 'SpecFlow'],
 		},
 		{
-			category: 'API & Integration',
-			tools: ['REST APIs', 'Postman', 'SoapUI', 'JSON', 'XML', 'service validation'],
+			category: 'Performance Engineering',
+			tools: ['k6', 'JMeter', 'Locust', 'Chaos Engineering'],
 		},
 		{
-			category: 'Performance',
-			tools: ['k6', 'JMeter', 'Locust', 'load testing', 'bottleneck analysis'],
+			category: 'Frontend & Backend',
+			tools: ['React', 'Next.js', 'Express.js', 'Tailwind CSS', 'StyleX', 'FastAPI', 'Reflex'],
 		},
 		{
-			category: 'Development',
-			tools: ['React', 'Next.js', 'Express.js', 'FastAPI', 'Tailwind CSS', 'SmartCOMM'],
+			category: 'CCM & Document Automation',
+			tools: ['SmartCOMM', 'Template design', 'Document rules', 'Omnichannel delivery'],
 		},
 		{
 			category: 'Delivery & Infrastructure',
 			tools: ['GitHub Actions', 'Jenkins', 'Docker', 'AWS', 'CI/CD'],
+		},
+		{
+			category: 'Domains',
+			tools: ['Insurance', 'Payments', 'FinTech', 'Crypto', 'Retail'],
 		},
 	],
 
@@ -75,10 +81,10 @@ export const resume: ResumeData = {
 			period: '2025 - Present',
 			location: 'Melbourne, Australia',
 			description: [
-				'Developed SmartCOMM CCM templates, document rules, and reusable components for insurance policy, claims, billing, and compliance communications.',
-				'Integrated SmartCOMM with core insurance systems using XML/JSON payloads, APIs, and document generation services for on-demand and batch processing.',
-				'Delivered high-volume omnichannel communications across PDF, print, SMS, fax, responsive email, and digital channels with dynamic content, personalization, and compliance controls.',
-				'Supported configuration, data mapping, testing, deployment, and incident resolution to ensure scalable, accurate, and standardized customer communication workflows.',
+				'Built SmartCOMM templates, rules, and reusable components for insurance policy, claims, complaints, and compliance.',
+				'Integrated SmartCOMM with core systems via XML/JSON, APIs, and document services for on-demand and batch processing.',
+				'Delivered high-volume omnichannel communications (PDF, print, SMS, email, digital) with personalization and compliance controls.',
+				'Owned configuration, data mapping, testing, deployment, and incident resolution for scalable communication workflows.',
 			],
 		},
 		{
@@ -87,10 +93,10 @@ export const resume: ResumeData = {
 			period: '2022 - 2025',
 			location: 'Melbourne, Australia',
 			description: [
-				'Built and maintained scalable automation frameworks for complex insurance platforms across policy, claims, and underwriting workflows.',
-				'Delivered multi-channel validation across PDF, email, SMS, and related communication outputs aligned to business and regulatory rules.',
-				'Integrated automation into delivery workflows to improve release confidence, earlier defect detection, and maintainable quality practices.',
-				'Developed SmartCOMM templates, document rules, and reusable components for insurance communications.',
+				'Built scalable automation frameworks for insurance platforms across policy, claims, and underwriting.',
+				'Delivered multi-channel validation (PDF, email, SMS) against business and regulatory rules.',
+				'Embedded automation into delivery pipelines for earlier defect detection and higher release confidence.',
+				'Developed SmartCOMM templates, rules, and reusable components for insurance communications.',
 			],
 		},
 		{
@@ -99,10 +105,10 @@ export const resume: ResumeData = {
 			period: '2020 - 2022',
 			location: 'Melbourne, Australia',
 			description: [
-				'Served as a Test Automation Consultant at ANZ within the Payments and Messaging division.',
-				'Built and maintained automated test frameworks covering backend payment-processing APIs and frontend applications.',
-				'Executed chaos engineering experiments to validate system resilience under load, failover, and degraded-network conditions.',
-				'Performed comprehensive UI accessibility testing (WCAG) to ensure compliant, robust, and user-friendly interfaces across critical payment workflows.',
+				'Test Automation Consultant at ANZ Payments and Messaging.',
+				'Built automated frameworks for payment APIs and frontend applications.',
+				'Ran chaos experiments to validate resilience under load, failover, and network degradation.',
+				'Performed WCAG accessibility testing across critical payment workflows.',
 			],
 		},
 		{
@@ -111,9 +117,9 @@ export const resume: ResumeData = {
 			period: '2020 - 2021',
 			location: 'Philippines (Remote)',
 			description: [
-				'Specialized as a consultant in test automation and performance engineering across multiple crypto and blockchain projects.',
-				'Architected end-to-end testing strategies for high-throughput cryptocurrency trading platforms, including automated validation of trading services and Crypto-as-a-Service (CaaS) components.',
-				'Engineered performance and load-testing scenarios to benchmark latency, throughput, and overall system stability under extreme market volatility and stress conditions.',
+				'Specialized in test automation and performance engineering for crypto and blockchain platforms.',
+				'Designed end-to-end strategies for high-throughput trading and Crypto-as-a-Service components.',
+				'Built performance and load tests measuring latency, throughput, and stability under extreme volatility.',
 			],
 		},
 		{
@@ -122,32 +128,32 @@ export const resume: ResumeData = {
 			period: '2015 - 2019',
 			location: 'Makati, Philippines',
 			description: [
-				'Led the end-to-end automation strategy for the travel domain, cutting manual testing effort by 50%. Engineered scalable automation frameworks and reusable libraries, significantly boosting test coverage, execution speed, and long-term maintainability.',
-				'Collaborated closely with cross-functional teams to integrate automation into CI/CD pipelines, enabling faster feedback loops and improving release confidence across multiple product lines.',
-				'Championed the adoption of shift-left testing practices, embedding quality early in the development lifecycle and fostering a culture of proactive quality assurance.',
-				'Mentored junior testers and developers on automation best practices, test design, and effective use of tools, contributing to a stronger overall testing capability within the organization.',
+				'Led automation strategy for the travel domain, reducing manual testing effort by 50%.',
+				'Built scalable frameworks and reusable libraries that improved coverage, speed, and maintainability.',
+				'Integrated automation into CI/CD for faster feedback and higher release confidence.',
+				'Drove shift-left practices and mentored teams on automation best practices.',
 			],
 		},
 		{
 			title: 'Test Lead',
 			company: 'Finastra',
-			location: 'Makati, Philippines',
 			period: '2011 - 2015',
+			location: 'Makati, Philippines',
 			description: [
-				'Led a team of testers responsible for testing and quality assurance of financial software products. Collaborated with cross-functional teams to ensure product quality and meet client requirements.',
-				'Developed and executed test plans, test cases, and test scripts to validate software functionality, performance, and security.',
-				'Provided training and mentorship to junior testers, fostering a culture of continuous learning and improvement within the team.',
+				'Led QA for financial software products.',
+				'Created and executed test plans covering functionality, performance, and security.',
+				'Mentored junior testers and drove continuous improvement.',
 			],
 		},
 		{
 			title: 'Software Engineer',
 			company: 'Accenture',
-			location: 'Makati, Philippines',
 			period: '2010 - 2011',
+			location: 'Makati, Philippines',
 			description: [
-				'Developed and maintained software applications, ensuring high performance, scalability, and reliability.',
-				'Collaborated with cross-functional teams to gather requirements, design solutions, and implement features.',
-				'Participated in code reviews, debugging, and troubleshooting to deliver high-quality software products.',
+				'Developed and maintained applications focused on performance, scalability, and reliability.',
+				'Collaborated on requirements, design, and feature delivery.',
+				'Contributed to code reviews, debugging, and troubleshooting.',
 			],
 		},
 	],

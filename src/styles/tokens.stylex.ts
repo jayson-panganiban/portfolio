@@ -18,17 +18,17 @@ export const tokens = stylex.defineVars({
 	primary: 'var(--color-primary)',
 	primaryRgb: 'var(--color-primary-rgb)',
 	primaryLight: 'var(--color-primary-light)',
+	noteRule: 'var(--color-note-rule)',
 	hoverAccent: 'var(--color-hover-accent)',
-	panelHoverBorder: 'var(--color-panel-hover-border)',
 	linkAccent: 'var(--color-link-accent)',
 	buttonBorder: 'var(--color-button-border)',
 	radiusCard: 'var(--radius-card)',
 	radiusControl: 'var(--radius-control)',
-	shadowCardHover: 'var(--shadow-card-hover)',
 	headerHeight: 'var(--header-height)',
-	fontDisplay: 'Georgia, Cambria, "Times New Roman", serif',
+	fontDisplay:
+		'"Ioskeley Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace',
 	fontSans:
-		'"FK Grotesk", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif',
+		'"Ioskeley Mono SemiCondensed", "Ioskeley Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace',
 	fontMono:
-		'"FK Grotesk Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+		'"Ioskeley Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace',
 })

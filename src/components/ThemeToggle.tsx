@@ -10,10 +10,6 @@ const styles = stylex.create({
 	placeholder: {
 		height: 36,
 		width: 36,
-		borderWidth: 1,
-		borderStyle: 'solid',
-		borderColor: tokens.border,
-		backgroundColor: tokens.surfaceMuted,
 	},
 	button: {
 		display: 'inline-flex',
@@ -22,9 +18,12 @@ const styles = stylex.create({
 		flexShrink: 0,
 		alignItems: 'center',
 		justifyContent: 'center',
+		border: 'none',
 		color: tokens.muted,
 		transitionProperty: 'color',
-		':hover': { color: tokens.hoverAccent },
+		':hover': {
+			color: tokens.primary,
+		},
 	},
 })
 
@@ -45,7 +44,7 @@ export function ThemeToggle() {
 			type='button'
 			onClick={toggleTheme}
 			{...stylex.props(styles.button)}
-			aria-label='Toggle theme'
+			aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
 		>
 			{theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
 		</button>

@@ -6,8 +6,8 @@ type Theme = 'light' | 'dark'
 
 // Keep in sync with --color-background in globals.css
 const themeColors: Record<Theme, string> = {
-	light: '#f4efe5',
-	dark: '#000000',
+	light: '#f3f1e9',
+	dark: '#1c1b1a',
 }
 
 interface ThemeContextType {

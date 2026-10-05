@@ -2,6 +2,7 @@ import * as stylex from '@stylexjs/stylex'
 import { resume } from '@/data/resume'
 import { shared } from '@/styles/shared'
 import { tokens } from '@/styles/tokens.stylex'
+import { HeroScrollCue } from './HeroScrollCue'
 
 const sm = '@media (min-width: 640px)'
 const md = '@media (min-width: 768px)'
@@ -55,14 +56,14 @@ const styles = stylex.create({
 	name: {
 		maxWidth: '13ch',
 		fontFamily: tokens.fontDisplay,
-		fontSize: 'clamp(3.4rem, 10vw, 8rem)',
-		lineHeight: 0.95,
-		letterSpacing: '-0.02em',
+		fontSize: 'clamp(3rem, 8.5vw, 7rem)',
+		lineHeight: 0.98,
+		letterSpacing: '-0.045em',
 		color: tokens.heading,
 	},
 	firstName: {
 		fontFamily: tokens.fontDisplay,
-		fontStyle: 'italic',
+		fontStyle: 'normal',
 		color: tokens.primary,
 	},
 	details: {
@@ -83,12 +84,12 @@ const styles = stylex.create({
 		},
 	},
 	summary: {
-		maxWidth: '34ch',
+		maxWidth: '40ch',
 		fontSize: {
 			default: 16.5,
 			[sm]: 18,
 		},
-		lineHeight: '1.75rem',
+		lineHeight: { default: '1.65rem', [sm]: '1.75rem' },
 		color: tokens.body,
 	},
 	actions: {
@@ -135,7 +136,7 @@ export function Hero() {
 					<p {...stylex.props(styles.summary)}>{resume.summary}</p>
 
 					<div {...stylex.props(styles.actions)}>
-						<a href='#projects' {...stylex.props(shared.focusRing, shared.textLink)}>
+						<a href='#projects' {...stylex.props(shared.focusRing, shared.primaryButton)}>
 							View projects
 						</a>
 
@@ -151,6 +152,7 @@ export function Hero() {
 
 				<p {...stylex.props(styles.location)}>{resume.location}</p>
 			</div>
+			<HeroScrollCue />
 		</section>
 	)
 }
