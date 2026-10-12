@@ -7,6 +7,9 @@ import './globals.css'
 export const metadata: Metadata = {
 	title: 'Jayson Panganiban',
 	description: 'Automation, QA, and development portfolio for Jayson Panganiban.',
+	icons: {
+		icon: '/favicon.svg',
+	},
 }
 
 export const viewport: Viewport = {
