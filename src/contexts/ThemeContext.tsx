@@ -4,10 +4,10 @@ import { createContext, useContext, useEffect, useState } from 'react'
 
 type Theme = 'light' | 'dark'
 
-// Keep in sync with --color-background in globals.css
+// Keep in sync with --ground in globals.css.
 const themeColors: Record<Theme, string> = {
-	light: '#f3f1e9',
-	dark: '#1c1b1a',
+	light: '#eef0e8',
+	dark: '#101514',
 }
 
 interface ThemeContextType {
@@ -29,9 +29,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 		const savedTheme = localStorage.getItem('theme') as Theme | null
 		if (savedTheme) {
 			setTheme(savedTheme)
-		} else {
-			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-			setTheme(prefersDark ? 'dark' : 'light')
 		}
 	}, [])
 
@@ -39,11 +36,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 		if (!mounted) return
 
 		const root = document.documentElement
-		if (theme === 'dark') {
-			root.classList.add('dark')
-		} else {
-			root.classList.remove('dark')
-		}
+		root.classList.toggle('light', theme === 'light')
 
 		const themeColorTags = document.querySelectorAll('meta[name="theme-color"]')
 		for (const tag of themeColorTags) {

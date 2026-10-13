@@ -1,12 +1,11 @@
-import * as stylex from '@stylexjs/stylex'
 import type { Metadata, Viewport } from 'next'
 import { ThemeProvider } from '@/contexts/ThemeContext'
-import { tokens } from '@/styles/tokens.stylex'
 import './globals.css'
 
 export const metadata: Metadata = {
 	title: 'Jayson Panganiban',
-	description: 'Automation, QA, and development portfolio for Jayson Panganiban.',
+	description:
+		'Builds automation, performance, and product tools that help teams ship with confidence.',
 	icons: {
 		icon: '/favicon.svg',
 	},
@@ -15,23 +14,13 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
 	colorScheme: 'light dark',
 	viewportFit: 'cover',
-	themeColor: [
-		{ media: '(prefers-color-scheme: light)', color: '#f3f1e9' },
-		{ media: '(prefers-color-scheme: dark)', color: '#1c1b1a' },
-	],
+	themeColor: '#101514',
 }
-
-const styles = stylex.create({
-	body: {
-		fontFamily: tokens.fontSans,
-		WebkitFontSmoothing: 'antialiased',
-	},
-})
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' data-scroll-behavior='smooth' suppressHydrationWarning>
-			<body {...stylex.props(styles.body)}>
+			<body>
 				<ThemeProvider>{children}</ThemeProvider>
 			</body>
 		</html>
