@@ -13,7 +13,6 @@ export type SocialLink = {
 
 export type ResumeData = {
 	summary: string
-	email: string
 	workHistory: WorkHistoryItem[]
 	resumeLink: string
 	socialLinks: SocialLink[]
@@ -22,7 +21,6 @@ export type ResumeData = {
 export const resume: ResumeData = {
 	summary:
 		'I help teams ship faster by building better testing, observability, and practical tooling.',
-	email: 'json.panganiban@gmail.com',
 
 	workHistory: [
 		{

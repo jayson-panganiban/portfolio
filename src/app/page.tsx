@@ -6,6 +6,12 @@ import { resume } from '@/data/resume'
 const featuredRoles = resume.workHistory.slice(0, 5)
 
 export default function Home() {
+	const emailLink = resume.socialLinks.find(link => link.name === 'Email')
+
+	if (!emailLink) {
+		throw new Error("resume.socialLinks must contain an entry named 'Email'")
+	}
+
 	return (
 		<PageLayout>
 			<main id='main'>
@@ -28,10 +34,10 @@ export default function Home() {
 
 						<div className='hero__actions'>
 							<a className='button button--solid' href='#projects'>
-								See projects<span aria-hidden='true'>↓</span>
+								See projects
 							</a>
 							<a className='text-link' href={resume.resumeLink} download>
-								Download CV <span aria-hidden='true'>↓</span>
+								Download CV
 							</a>
 						</div>
 					</div>
@@ -39,7 +45,7 @@ export default function Home() {
 
 				<section className='experience shell' id='experience'>
 					<div className='section-heading'>
-						<h2 className='section-tag'>01 / Experience</h2>
+						<h2 className='section-tag'>Experience</h2>
 						<p>Selected roles. Full history is in the CV.</p>
 					</div>
 					<div className='experience__list'>
@@ -59,11 +65,8 @@ export default function Home() {
 
 				<section className='work shell' id='projects'>
 					<div className='section-heading'>
-						<h2 className='section-tag'>02 / Projects</h2>
+						<h2 className='section-tag'>Projects</h2>
 						<p>Useful tools, tested ideas, published products.</p>
-					</div>
-					<div className='work__signal' aria-hidden='true'>
-						<span />
 					</div>
 					<div className='work__list'>
 						{projectsData.map((project, index) => (
@@ -73,14 +76,14 @@ export default function Home() {
 				</section>
 
 				<section className='contact shell' id='contact'>
-					<p className='section-tag'>03 / Contact</p>
+					<p className='section-tag'>Contact</p>
 					<h2>
 						Need a calmer
 						<br />
 						<em>release day?</em>
 					</h2>
 					<div className='contact__actions'>
-						<a className='button button--solid' href={`mailto:${resume.email}`}>
+						<a className='button button--solid' href={emailLink.url}>
 							Email<span aria-hidden='true'>↗</span>
 						</a>
 						{resume.socialLinks

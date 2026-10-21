@@ -1,15 +1,6 @@
-# Jayson Panganiban — Portfolio
+# Portfolio
 
-Personal portfolio for Jayson Panganiban, an automation, performance, and product engineer based in Melbourne. It is available at [jaysonpanganiban.com](https://jaysonpanganiban.com).
-
-The site is designed as a calm reliability surface: a concise record of experience, independent products, and a clear route to get in touch or download the CV. The full design rationale is in [DESIGN.md](DESIGN.md).
-
-## Highlights
-
-- A responsive, signal-led interface built around release confidence.
-- Selected experience, independent projects, and direct contact actions.
-- Light and dark themes; the mobile browser chrome updates with the selected theme.
-- Motion that respects `prefers-reduced-motion`.
+My personal portfolio website. View live at [jaysonpanganiban.com](https://jaysonpanganiban.com).
 
 ## Stack
 

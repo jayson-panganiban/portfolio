@@ -21,6 +21,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang='en' data-scroll-behavior='smooth' suppressHydrationWarning>
 			<body>
+				{/* Applies the stored theme before first paint so light-mode users never flash dark. */}
+				<script>
+					{
+						"(function(){try{if(localStorage.getItem('theme')==='light'){document.documentElement.classList.add('light')}}catch(e){}})()"
+					}
+				</script>
 				<ThemeProvider>{children}</ThemeProvider>
 			</body>
 		</html>

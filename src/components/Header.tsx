@@ -34,7 +34,7 @@ export function Header() {
 	return (
 		<header className='site-header'>
 			<div className='shell site-header__inner'>
-				<a className='site-header__mark' href='#top' aria-label='Jayson Panganiban home'>
+				<a className='site-header__mark' href='#top' aria-label='JP. — Jayson Panganiban, home'>
 					JP<span>.</span>
 				</a>
 				<nav aria-label='Primary navigation'>
