@@ -1,9 +1,0 @@
-{
-	"editor.formatOnSave": true,
-	"editor.codeActionsOnSave": {
-		"source.fixAll.biome": "always",
-		"source.organizeImports.biome": "always"
-	},
-	"editor.defaultFormatter": "biomejs.biome",
-	"css.customData": [".vscode/css-custom-data.json"]
-}

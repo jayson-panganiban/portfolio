@@ -1,107 +1,38 @@
-import { PageLayout } from '@/components/PageLayout'
-import { ProjectCard } from '@/components/ProjectCard'
-import { projectsData } from '@/data/projects'
-import { resume } from '@/data/resume'
-
-const featuredRoles = resume.workHistory.slice(0, 5)
+import { ContactSpec } from "@/components/ContactSpec";
+import { ExperienceSpec } from "@/components/ExperienceSpec";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { MetricsGrid } from "@/components/MetricsGrid";
+import { ProjectsSpec } from "@/components/ProjectsSpec";
+import { SkillsSpec } from "@/components/SkillsSpec";
 
 export default function Home() {
-	const emailLink = resume.socialLinks.find(link => link.name === 'Email')
+  return (
+    <div className="min-h-screen flex flex-col bg-[var(--bg-canvas)] text-[var(--ink-primary)]">
+      {/* Skip to Main Content Link for WCAG Accessibility */}
+      <a
+        href="#overview"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[var(--signal)] text-[var(--on-signal)] font-mono text-xs uppercase tracking-widest outline-none ring-2 ring-white"
+      >
+        Skip to main content
+      </a>
 
-	if (!emailLink) {
-		throw new Error("resume.socialLinks must contain an entry named 'Email'")
-	}
+      {/* Top Masthead */}
+      <Header />
 
-	return (
-		<PageLayout>
-			<main id='main'>
-				<section className='hero shell' id='top'>
-					<div className='hero__topline'>
-						<p>Jayson Panganiban</p>
-						<p>Melbourne, Australia</p>
-					</div>
-					<div className='hero__body'>
-						<p className='kicker'>automation · performance · development</p>
-						<h1>
-							Build
-							<br />
-							<em>confidence.</em>
-						</h1>
-						<div className='signal signal--hero' aria-hidden='true'>
-							<span />
-						</div>
-						<p className='hero__summary'>{resume.summary}</p>
+      {/* Main Body */}
+      <main id="main-content" className="flex-1">
+        <Hero />
+        <MetricsGrid />
+        <ProjectsSpec />
+        <ExperienceSpec />
+        <SkillsSpec />
+        <ContactSpec />
+      </main>
 
-						<div className='hero__actions'>
-							<a className='button button--solid' href='#projects'>
-								See projects
-							</a>
-							<a className='text-link' href={resume.resumeLink} download>
-								Download CV
-							</a>
-						</div>
-					</div>
-				</section>
-
-				<section className='experience shell' id='experience'>
-					<div className='section-heading'>
-						<h2 className='section-tag'>Experience</h2>
-						<p>Selected roles. Full history is in the CV.</p>
-					</div>
-					<div className='experience__list'>
-						{featuredRoles.map(role => (
-							<article className='experience__item' key={`${role.company}-${role.period}`}>
-								<p className='experience__period'>{role.period}</p>
-								<h3>{role.company}</h3>
-								<div>
-									<p>{role.title}</p>
-									<p className='experience__detail'>{role.description}</p>
-									<p className='experience__stack'>{role.stack.join(' · ')}</p>
-								</div>
-							</article>
-						))}
-					</div>
-				</section>
-
-				<section className='work shell' id='projects'>
-					<div className='section-heading'>
-						<h2 className='section-tag'>Projects</h2>
-						<p>Useful tools, tested ideas, published products.</p>
-					</div>
-					<div className='work__list'>
-						{projectsData.map((project, index) => (
-							<ProjectCard key={project.id} project={project} index={index + 1} />
-						))}
-					</div>
-				</section>
-
-				<section className='contact shell' id='contact'>
-					<p className='section-tag'>Contact</p>
-					<h2>
-						Need a calmer
-						<br />
-						<em>release day?</em>
-					</h2>
-					<div className='contact__actions'>
-						<a className='button button--solid' href={emailLink.url}>
-							Email<span aria-hidden='true'>↗</span>
-						</a>
-						{resume.socialLinks
-							.filter(link => link.name !== 'Email')
-							.map(link => (
-								<a
-									className='text-link'
-									key={link.name}
-									href={link.url}
-									target='_blank'
-									rel='noreferrer'
-								>
-									{link.name} <span aria-hidden='true'>↗</span>
-								</a>
-							))}
-					</div>
-				</section>
-			</main>
-		</PageLayout>
-	)
+      {/* Colophon Footer */}
+      <Footer />
+    </div>
+  );
 }
