@@ -76,10 +76,10 @@ export function Hero() {
             {/* Action Buttons: Primary + Secondary CTAs */}
             <div className="flex flex-wrap items-center gap-2.5 print:hidden">
               <a
-                href="#projects"
+                href="#experience"
                 className="px-4 py-2 bg-[var(--signal)] text-[var(--on-signal)] font-mono text-[11px] uppercase tracking-widest hover:bg-[var(--signal-hover)] transition-colors inline-flex items-center gap-1.5 focus-visible:outline-none"
               >
-                <span>VIEW CASE STUDIES</span>
+                <span>VIEW EXPERIENCE</span>
                 <span aria-hidden="true">↓</span>
               </a>
 

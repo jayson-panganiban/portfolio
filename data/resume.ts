@@ -38,10 +38,10 @@ export interface ResumeData {
 
 export const resume: ResumeData = {
   name: "Jayson Panganiban",
-  title: "Principal Automation Consultant & Product Engineer",
+  title: "AUTOMATION | PERFORMANCE | DEVELOPMENT",
   email: "json.panganiban@gmail.com",
   tagline: "Test automation, performance engineering, and full-stack systems.",
-  bio: "15+ years architecting zero-regression test automation, performance engineering, and high-volume customer communication (CCM) pipelines for tier-1 banking, fintech, crypto and insurance.",
+  bio: "Driving zero-regression test automation, performance engineering, and enterprise-scale customer communication platforms.",
   location: "Melbourne, VIC",
   country: "Australia",
   resumeUrl: "/JaysonPanganiban_CV.pdf",
@@ -49,15 +49,15 @@ export const resume: ResumeData = {
   metrics: [
     {
       value: "15+ Yrs",
-      label: "Industry Practice",
-      subtext: "Tier-1 banking, fintech, crypto and insurance platforms",
+      label: "Industry Focus",
+      subtext: "Banking, fintech, crypto, and insurance",
       tag: "TENURE",
     },
     {
       value: "Full-Stack QA",
-      label: "Core Discipline",
-      subtext: "Automated UI, API, and Performance Engineering",
-      tag: "CORE DISCIPLINE",
+      label: "Discipline",
+      subtext: "UI, API & Performance Engineering",
+      tag: "CORE",
     },
     {
       value: "Enterprise CCM",
@@ -92,7 +92,6 @@ export const resume: ResumeData = {
         "SoapUI",
         "Grafana",
         "LoadRunner",
-        "WCAG 2.1",
       ],
     },
     {

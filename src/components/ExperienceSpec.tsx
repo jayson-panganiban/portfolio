@@ -10,7 +10,7 @@ export function ExperienceSpec() {
       className="w-full border-b border-[var(--grid-line)] bg-[var(--bg-canvas)] py-12 md:py-18"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <SectionHeader number={3} label="PROFESSIONAL EXPERIENCE" />
+        <SectionHeader number={2} label="PROFESSIONAL EXPERIENCE" />
 
         {/* Experience Ledger */}
         <div className="border border-[var(--grid-line)] divide-y divide-[var(--grid-line)] bg-[var(--bg-surface)]">

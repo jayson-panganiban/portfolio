@@ -1,6 +1,6 @@
 # Portfolio Dossier
 
-Swiss-grid technical dossier portfolio built with Next.js, React, TypeScript, Tailwind CSS, and IBM Plex.
+My personal portfolio website. View live at [jaysonpanganiban.com](https://jaysonpanganiban.com)
 
 ## Development
 

@@ -7,8 +7,8 @@ export function Footer() {
         <div className="flex items-center gap-3">
           <span className="registration-target" aria-hidden="true" />
           <span>
-            © {new Date().getFullYear()} {resume.name.toUpperCase()} // PRINCIPAL CONSULTANT //
-            PRODUCT ENGINEERING
+            © {new Date().getFullYear()} {resume.name.toUpperCase()} // PRINCIPAL CONSULTANT // QA
+            ENGINEER
           </span>
         </div>
         <div className="flex items-center gap-4">

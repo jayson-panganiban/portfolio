@@ -11,9 +11,6 @@ export function SectionHeader({ number, label }: SectionHeaderProps) {
         <span className="inline-block h-1.5 w-1.5 bg-[var(--signal)]" aria-hidden="true" />
         <span>{`SECTION 0${number} // ${label}`}</span>
       </h2>
-      <span className="hidden shrink-0 font-mono text-[10px] uppercase tracking-widest text-[var(--ink-tertiary)] sm:inline">
-        {`FOLIO 0${number} / 05`}
-      </span>
     </div>
   );
 }

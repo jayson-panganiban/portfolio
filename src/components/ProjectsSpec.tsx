@@ -6,11 +6,11 @@ export function ProjectsSpec() {
   return (
     <section
       id="projects"
-      aria-label="Featured Projects"
+      aria-label="Side Builds"
       className="w-full border-b border-[var(--grid-line)] bg-[var(--bg-canvas)] py-12 md:py-18"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <SectionHeader number={2} label="FEATURED PROJECTS" />
+        <SectionHeader number={4} label="SIDE BUILDS" />
 
         {/* 2-Column Project Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

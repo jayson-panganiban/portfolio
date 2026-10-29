@@ -18,14 +18,14 @@ const mono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jaysonpanganiban.com"),
-  title: "Jayson Panganiban // Technical Specification & Systems Dossier",
+  title: "Jayson Panganiban",
   description:
     "Principal Automation Consultant & Full-Stack Product Engineer. 15+ years experience in enterprise test automation, chaos resilience, and customer communication workflows across banking, fintech, crypto and insurance.",
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Jayson Panganiban // Technical Specification & Systems Dossier",
+    title: "Jayson Panganiban",
     description:
       "Principal Automation Consultant & Full-Stack Product Engineer. 15+ years of verified enterprise impact.",
     type: "website",

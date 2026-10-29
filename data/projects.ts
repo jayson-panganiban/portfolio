@@ -27,19 +27,6 @@ export const projectsData: Project[] = [
     featured: true,
   },
   {
-    id: "philippine-zip-codes-search",
-    title: "Philippine ZIP Codes",
-    tagline: "Postal code directory engine.",
-    category: "Directory",
-    infrastructure: "PLATFORM: CLOUDFLARE",
-    stat: "Instant Search",
-    summary:
-      "Zero-dependency client directory indexing 2,800+ Philippine zones with instant keyboard filtering and one-tap copying.",
-    stack: ["Javascript", "HTML5", "OKLCH CSS", "Cloudflare", "SEO", "Pages"],
-    href: "https://phzipcodes.com",
-    featured: true,
-  },
-  {
     id: "faq-mate",
     title: "FAQ Mate",
     tagline: "Insurance policy retrieval assistant.",
@@ -61,16 +48,29 @@ export const projectsData: Project[] = [
     featured: true,
   },
   {
+    id: "philippine-zip-codes",
+    title: "Philippine ZIP Codes",
+    tagline: "Postal code directory engine.",
+    category: "Directory",
+    infrastructure: "PLATFORM: CLOUDFLARE",
+    stat: "Instant Search",
+    summary:
+      "Zero-dependency client directory indexing 2,800+ Philippine zones with instant keyboard filtering and one-tap copying.",
+    stack: ["Javascript", "HTML5", "OKLCH CSS", "Cloudflare", "SEO", "Pages"],
+    href: "https://phzipcodes.com",
+    featured: true,
+  },
+  {
     id: "rest-in-pytest",
     title: "Rest in Pytest",
     tagline: "Chainable HTTP API testing wrapper.",
-    category: "Dev Tool",
-    infrastructure: "REGISTRY: PYPI",
-    stat: "PyPI Package",
+    category: "QA Tool",
+    infrastructure: "REGISTRY: GITHUB",
+    stat: "Test Framework",
     summary:
       "Fluent Python testing helper wrapping Pytest and HTTPX to eliminate boilerplate in REST regression suites.",
     stack: ["Python", "Pytest", "HTTPX", "Pydantic"],
-    href: "https://pypi.org/project/rephrase/",
+    href: "https://github.com/jayson-panganiban/rest-in-pytest/",
     featured: false,
   },
 ];

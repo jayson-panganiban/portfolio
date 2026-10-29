@@ -13,7 +13,7 @@ export function SkillsSpec() {
       <div id="capabilities" className="sr-only" />
 
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <SectionHeader number={4} label="CORE STACK" />
+        <SectionHeader number={3} label="CORE STACK" />
 
         <div className="divide-y divide-[var(--grid-line)] border border-[var(--grid-line)] bg-[var(--bg-surface)]">
           {resume.skillGroups.map((group, index) => (
